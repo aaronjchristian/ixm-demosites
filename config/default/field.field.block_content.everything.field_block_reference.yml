@@ -1,0 +1,28 @@
+uuid: 89315856-9af9-41e8-8e02-99348e090f96
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - block_content.type.everything
+    - field.storage.block_content.field_block_reference
+id: block_content.everything.field_block_reference
+field_name: field_block_reference
+entity_type: block_content
+bundle: everything
+label: 'Block Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

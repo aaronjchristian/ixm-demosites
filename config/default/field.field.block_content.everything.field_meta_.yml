@@ -1,0 +1,21 @@
+uuid: 3688384e-8c0b-452c-98b3-2914704426c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.everything
+    - field.storage.block_content.field_meta_
+  module:
+    - metatag
+id: block_content.everything.field_meta_
+field_name: field_meta_
+entity_type: block_content
+bundle: everything
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

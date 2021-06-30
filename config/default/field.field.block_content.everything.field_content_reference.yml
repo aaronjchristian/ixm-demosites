@@ -1,0 +1,28 @@
+uuid: ffc3d9dc-e335-4572-a781-44108b9e069d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.everything
+    - field.storage.block_content.field_content_reference
+    - node.type.page
+id: block_content.everything.field_content_reference
+field_name: field_content_reference
+entity_type: block_content
+bundle: everything
+label: 'Content Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

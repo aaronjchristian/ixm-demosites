@@ -1,0 +1,15 @@
+uuid: 519e8511-c461-4d4b-bc85-9aca821c8c97
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/block_library/images/icon-text.svg
+_core:
+  default_config_hash: HWuP26X-aujTBHZoUPAMbYuRxeTHBBQkVkV1qwQz1DM
+id: text
+label: Text
+revision: 0
+description: 'A text block contains a title and a body.'

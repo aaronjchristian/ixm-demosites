@@ -1,0 +1,21 @@
+uuid: 6aeeed7e-f760-4936-87f1-09f6c2c55908
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.everything
+    - field.storage.block_content.field_list_checkboxes_
+  module:
+    - options
+id: block_content.everything.field_list_checkboxes_
+field_name: field_list_checkboxes_
+entity_type: block_content
+bundle: everything
+label: 'List (checkboxes)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,12 @@
+@include media-breakpoint-down(md) {
+  #toolbar-bar {
+    position: fixed;
+  }
+}
+
+.display-2 {
+  @include media-breakpoint-down(md) {
+    @include font-size(48px);
+    line-height: 1.25;
+  }
+}

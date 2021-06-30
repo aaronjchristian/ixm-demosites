@@ -1,0 +1,27 @@
+uuid: 33bce7cd-b3cf-45ab-a1ad-3eccf06834f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: qFHLhUrlmsuZvozDkW2kqPh39vzQ1tYmCszYMaibCto
+id: bootstrap_barrio_main_menu
+theme: bootstrap_barrio
+region: top_header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+use Drupal\bootstrap\Bootstrap;
+
+/**
+ * Implements hook_preprocess_image().
+ */
+function swat_preprocess_image(&$vars) {
+  $vars['attributes']['class'][] = 'img-fluid';
+}
+
+/**
+ * Implements hook_preprocess_table().
+ */
+function swat_preprocess_table(&$variables) {
+  $variables['attributes']['class'][] = 'table';
+}
+
+/**
+ * Implements hook_preprocess_table().
+ */
+function swat_preprocess_views_view_table(&$variables) {
+  $variables['attributes']['class'][] = 'table';
+  $variables['attributes']['class'][] = 'table-striped';
+}
+
+/**
+ * Implements hook_preprocess_input().
+ */
+function swat_preprocess_input(&$variables) {
+  if ($variables['element']['#type'] === 'submit') {
+
+    if ($variables['element']['#value'] === 'Preview') {
+      $variables['attributes']['class'][] = 'btn-secondary';
+    }
+
+    if (!in_array('btn', $variables['attributes']['class'])) {
+      $variables['attributes']['class'][] = 'btn';
+    }
+
+    if (empty(array_intersect([
+      'btn-primary',
+      'btn-primary-lighter',
+      'btn-secondary',
+      'btn-success',
+      'btn-warning',
+      'btn-danger',
+      'btn-link',
+      'btn-info',
+    ], $variables['attributes']['class']))) {
+      $variables['attributes']['class'][] = 'btn-secondary';
+    }
+  }
+}

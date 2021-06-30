@@ -4,23 +4,42 @@
     "description": "Project template for Drupal 8 sites built with BLT.",
     "license": "GPL-2.0-only",
     "require": {
-        "acquia/blt": "^11.0.0",
+        "php": ">=7.2",
+        "acquia/blt": "^11.2.0",
         "acquia/drupal-spec-tool": "*",
-        "acquia/lightning": "^4.0.0",
+        "acquia/lightning": "dev-8.x-4.x",
         "acquia/memcache-settings": "*",
-        "drupal-composer/drupal-scaffold": "^2.5.4",
+        "bower-asset/bootstrap": "^4.4",
         "drupal/acquia_connector": "^1.5.0",
         "drupal/acquia_purge": "^1.0-beta3",
+        "drupal/admin_toolbar": "^2.3",
+        "drupal/block_library": "dev-master",
+        "drupal/bootstrap": "^3.23",
+        "drupal/bootstrap_barrio": "^5.1",
+        "drupal/bootstrap_layout_builder": "dev-master",
+        "drupal/bootstrap_styles": "dev-master",
         "drupal/cog": "^1.0.0",
         "drupal/config_split": "^1.0.0",
-        "drupal/console": "~1.0",
-        "drupal/core": "^8.6.0",
+        "drupal/core-composer-scaffold": "^8.8",
+        "drupal/core-recommended": "^8.8.0",
         "drupal/devel": "^2.0.0",
         "drupal/features": "^3.8.0",
+        "drupal/image_resize_filter": "^1.1",
+        "drupal/ixm_blocks": "dev-master",
+        "drupal/layout_builder_block_clone": "^1.1",
+        "drupal/layout_builder_blocks": "dev-master",
+        "drupal/layout_builder_kit": "^1.0@beta",
+        "drupal/layout_builder_modal": "^1.1",
+        "drupal/media_library_form_element": "^2.0",
+        "drupal/media_library_theme_reset": "^1.0",
+        "drupal/paragraphs": "^1.12",
         "drupal/qa_accounts": "^1.0.0-alpha1",
+        "drupal/responsive_preview": "^1.0",
         "drupal/seckit": "^1.0.0-alpha2",
+        "drupal/section_library": "dev-master",
         "drupal/shield": "^1.2.0",
-        "php": ">=7.1"
+        "imagex/swat": "^3.0",
+        "npm-asset/popper.js": "^1.16"
     },
     "require-dev": {
         "acquia/blt-require-dev": "11.x-dev"
@@ -34,9 +53,20 @@
     "extra": {
         "composer-exit-on-patch-failure": true,
         "drupal-scaffold": {
-            "initial": {
-                "sites/default/default.services.yml": "sites/default/services.yml",
-                "sites/default/default.settings.php": "sites/default/settings.php"
+            "locations": {
+                "web-root": "./docroot"
+            },
+            "file-mapping": {
+                "[web-root]/sites/default/default.services.yml": {
+                    "mode": "replace",
+                    "path": "docroot/core/assets/scaffold/files/default.services.yml",
+                    "overwrite": false
+                },
+                "[web-root]/sites/default/default.settings.php": {
+                    "mode": "replace",
+                    "path": "docroot/core/assets/scaffold/files/default.settings.php",
+                    "overwrite": false
+                }
             }
         },
         "enable-patching": true,
@@ -78,7 +108,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": []
+        "patches": {
+            "drupal/core": {
+                "1091852-104: Display Bug when using #states (Forms API) with Ajax Request": "https://www.drupal.org/files/issues/2019-11-19/1091852-104.patch"
+            }
+        }
     },
     "autoload": {
         "psr-4": {
@@ -91,6 +125,30 @@
         }
     },
     "repositories": {
+        "drupal/bootstrap_layout_builder": {
+            "type": "path",
+            "url": "drupal/bootstrap_layout_builder"
+        },
+        "drupal/bootstrap_styles": {
+            "type": "path",
+            "url": "drupal/bootstrap_styles"
+        },
+        "drupal/layout_builder_blocks": {
+            "type": "path",
+            "url": "drupal/layout_builder_blocks"
+        },
+        "drupal/block_library": {
+            "type": "path",
+            "url": "drupal/block_library"
+        },
+        "drupal/section_library": {
+            "type": "path",
+            "url": "drupal/section_library"
+        },
+        "drupal/ixm_blocks": {
+            "type": "path",
+            "url": "drupal/ixm_blocks"
+        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
@@ -106,7 +164,6 @@
         "post-create-project-cmd": [
             "blt internal:create-project:init-repo"
         ],
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "nuke": [
             "rm -rf vendor composer.lock docroot/core docroot/modules/contrib docroot/profiles/contrib docroot/themes/contrib",
             "@composer clearcache --ansi",

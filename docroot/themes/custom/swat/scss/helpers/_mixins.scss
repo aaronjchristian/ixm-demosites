@@ -1,0 +1,13 @@
+@mixin text-link-variant($parent, $color) {
+  #{$parent} {
+    a {
+      color: $color !important;
+      @include hover-focus() {
+        color: darken($color, $emphasized-link-hover-darken-percentage) !important;
+      }
+    }
+  }
+}
+@each $color, $value in $theme-colors {
+  @include text-link-variant(".text-link-#{$color}", $value);
+}

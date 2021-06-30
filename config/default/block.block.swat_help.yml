@@ -1,0 +1,22 @@
+uuid: 0ff7c74e-86cb-4b87-8e56-71a13beb8006
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - swat
+_core:
+  default_config_hash: v5-vYcxbtHwu_YtLZYfSlzhmXxtQlXkQc75WqqtvdQ4
+id: swat_help
+theme: swat
+region: content_top
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

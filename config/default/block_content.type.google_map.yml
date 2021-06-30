@@ -1,0 +1,15 @@
+uuid: 3a959c04-7a77-4054-9a87-6a75da393aac
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/block_library/images/icon-map.svg
+_core:
+  default_config_hash: I6aL46pRCPwdj90fj4yKCYY9ms3ZcidnCdAtK_LoEWs
+id: google_map
+label: 'Google Map'
+revision: 0
+description: 'Displays a Google map.'

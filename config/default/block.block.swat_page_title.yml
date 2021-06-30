@@ -1,0 +1,29 @@
+uuid: 53560466-de26-4bea-bd1f-55fc5d2e7d35
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - swat
+_core:
+  default_config_hash: o_-fxPH8V8BDHn21-NyDSwc_OiXuVOq3qu2CP21HPEU
+id: swat_page_title
+theme: swat
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

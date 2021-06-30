@@ -1,0 +1,71 @@
+uuid: a59913b7-bf9a-437c-a338-37fdedace0d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.rich_text
+  module:
+    - ckeditor
+_core:
+  default_config_hash: 0bVELtfx9sXhjZ6s6W-dJo8SW-IR9jiEIEylzm-2Cro
+format: rich_text
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Strike
+            - Superscript
+            - '-'
+            - Subscript
+            - RemoveFormat
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Styles
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - Table
+            - HorizontalRule
+            - media_browser
+            - DrupalImage
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+        -
+          name: Tools
+          items:
+            - ShowBlocks
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: "h1.display-1|Display 1\r\nh2.display-2|Display 2\r\nh3.display-3|Display 3\r\nh4.display-4|Display 4\r\na.btn.btn-lg.btn-outline-light.px-5.rounded-pill|Light Button\r\na.btn.btn-lg.btn-outline-dark.px-5.rounded-pill|Dark Button"
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

@@ -1,0 +1,21 @@
+uuid: a0c021f7-7213-423f-9d74-d068dc0470a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_accordion_item
+    - field.storage.block_content.field_title
+_core:
+  default_config_hash: R-AjdMZbLMCFibrBWwGOQyy5eLco9HFKzdeq4yokBeI
+id: block_content.ixm_blocks_accordion_item.field_title
+field_name: field_title
+entity_type: block_content
+bundle: ixm_blocks_accordion_item
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

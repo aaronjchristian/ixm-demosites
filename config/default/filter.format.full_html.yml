@@ -1,0 +1,29 @@
+uuid: 17dc556a-18c2-4c9a-945a-1bb001e21709
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_resize_filter
+    - media
+name: 'Full HTML'
+format: full_html
+weight: 0
+filters:
+  filter_image_resize:
+    id: filter_image_resize
+    provider: image_resize_filter
+    status: false
+    weight: 0
+    settings:
+      image_locations:
+        local: true
+        remote: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

@@ -1,0 +1,25 @@
+uuid: 615b1fa9-63f8-4070-a1b4-2559e78d5da0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_accordion_item
+    - field.storage.block_content.body
+  module:
+    - text
+_core:
+  default_config_hash: Pv7NYhj3AP1oQtPb76qxwRh7MX5yZqfq9mm3RFaMxHk
+id: block_content.ixm_blocks_accordion_item.body
+field_name: body
+entity_type: block_content
+bundle: ixm_blocks_accordion_item
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

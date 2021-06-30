@@ -1,0 +1,10 @@
+uuid: 9c0f77ed-2802-432a-a451-83259232d406
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JIGl6Xh57HEmzbiPfgV-l0U8xlFzF6yexLwSdYHnrLM
+id: ixm_blocks_accordion_item
+label: 'Accordion Item'
+revision: 0
+description: 'Subcomponent for the Accordion block.'

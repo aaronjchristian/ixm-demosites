@@ -1,0 +1,21 @@
+uuid: 6cc0a723-a3d7-4506-8033-ece4e2947ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.everything
+    - field.storage.block_content.field_list_text_
+  module:
+    - options
+id: block_content.everything.field_list_text_
+field_name: field_list_text_
+entity_type: block_content
+bundle: everything
+label: 'List (text)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

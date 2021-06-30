@@ -1,0 +1,22 @@
+uuid: 63816752-28a8-410c-a685-7d4db124bf84
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swat
+_core:
+  default_config_hash: MaP0JN89f0nFU4eHYLlaQa41PdFjWYHELeV1Hirz8Z0
+id: swat_content
+theme: swat
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

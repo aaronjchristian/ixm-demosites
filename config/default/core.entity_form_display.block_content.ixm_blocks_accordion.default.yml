@@ -1,0 +1,54 @@
+uuid: ee121410-f150-4a9a-9c48-eee60f5518de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_accordion
+    - field.field.block_content.ixm_blocks_accordion.body
+    - field.field.block_content.ixm_blocks_accordion.field_entity_reference_block
+  module:
+    - inline_entity_form
+    - text
+_core:
+  default_config_hash: 6HMknqRjIF1teaBRPxjsoPPYId7waSJ5dyAhiQFBThE
+id: block_content.ixm_blocks_accordion.default
+targetEntityType: block_content
+bundle: ixm_blocks_accordion
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_entity_reference_block:
+    weight: 27
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Accordion
+      label_plural: Accordions
+      collapsible: true
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

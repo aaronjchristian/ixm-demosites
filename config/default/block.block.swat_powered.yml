@@ -1,0 +1,22 @@
+uuid: dbefeaeb-becd-4ea7-aea2-ea92c412abfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swat
+_core:
+  default_config_hash: NqWd47dquzPdXUml7dFiO9c6TmzvWTJFKzdVBYY1Bak
+id: swat_powered
+theme: swat
+region: footer_three
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: acb33bb0-dc21-4578-896d-a83d1fc5b09a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.everything
+    - field.storage.block_content.field_options_email
+  module:
+    - contact_storage
+id: block_content.everything.field_options_email
+field_name: field_options_email
+entity_type: block_content
+bundle: everything
+label: 'Options email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: contact_storage_options_email

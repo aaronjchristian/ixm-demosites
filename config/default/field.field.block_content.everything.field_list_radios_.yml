@@ -1,0 +1,21 @@
+uuid: 2aff2b49-3f40-41c6-a973-b327d3409e24
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.everything
+    - field.storage.block_content.field_list_radios_
+  module:
+    - options
+id: block_content.everything.field_list_radios_
+field_name: field_list_radios_
+entity_type: block_content
+bundle: everything
+label: 'List (radios)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

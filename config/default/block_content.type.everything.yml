@@ -1,0 +1,8 @@
+uuid: 56eba955-c95f-4f9f-ace3-8d6d05c2d1dc
+langcode: en
+status: true
+dependencies: {  }
+id: everything
+label: Everything
+revision: 0
+description: ''

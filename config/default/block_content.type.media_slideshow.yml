@@ -1,0 +1,18 @@
+uuid: 11050d33-59b9-4a74-b661-c9fba29b93d8
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - lightning_media_slideshow
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/block_library/images/icon-slideshow.svg
+_core:
+  default_config_hash: 1po0dPtmem85m2UbxUrU6srsrl9uLcI9sE60FLyb2ho
+id: media_slideshow
+label: Slideshow
+revision: 0
+description: 'A slideshow or carousel of media items.'

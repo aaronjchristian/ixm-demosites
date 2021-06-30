@@ -1,0 +1,29 @@
+uuid: 2f8ff859-13b3-4da7-8167-b74775719cb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - bootstrap_barrio_subtheme
+_core:
+  default_config_hash: o_-fxPH8V8BDHn21-NyDSwc_OiXuVOq3qu2CP21HPEU
+id: bootstrap_barrio_subtheme_page_title
+theme: bootstrap_barrio_subtheme
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

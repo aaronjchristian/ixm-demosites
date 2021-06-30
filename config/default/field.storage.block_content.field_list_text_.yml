@@ -1,0 +1,30 @@
+uuid: 1c588d37-d9fc-41ca-8a69-1f664af69eda
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_list_text_
+field_name: field_list_text_
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Option 1'
+      label: 'Option 1'
+    -
+      value: 'Option 2'
+      label: 'Option 2'
+    -
+      value: 'Option 3'
+      label: 'Option 3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

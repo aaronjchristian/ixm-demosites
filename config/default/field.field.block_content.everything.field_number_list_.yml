@@ -1,0 +1,21 @@
+uuid: 9b3d1f1b-fd51-4161-8823-1fc0ba7793fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.everything
+    - field.storage.block_content.field_number_list_
+  module:
+    - options
+id: block_content.everything.field_number_list_
+field_name: field_number_list_
+entity_type: block_content
+bundle: everything
+label: 'Number (list)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

@@ -1,0 +1,15 @@
+uuid: b478c7c6-229b-419e-8e87-d07db16633d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/block_library/images/icon-banner.svg
+_core:
+  default_config_hash: fURxUigLuNciKlJa3rVc9EWyybnCiAyWASCEE1pIHFo
+id: banner
+label: Banner
+revision: 0
+description: 'Contains text over a large image.'
