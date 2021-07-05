@@ -1,0 +1,39 @@
+{% extends '@swat4/nav/base/base__menu.html.twig' %}
+
+{% set flex_row = true %}
+{% set attributes = attributes.addClass('navbar-nav') %}
+
+{% block nav_item %}
+  <li{{ item.attributes.addClass(item_classes, 'pe-2', item.below ? 'has-megamenu') }}>
+    {% set link_attributes = {
+      'class': [
+        'nav-link',
+        item.in_active_trail ? 'active',
+        item.url.getOption('attributes').class ? item.url.getOption('attributes').class | join(' '),
+        item.below ? 'd-flex justify-content-between align-content-center',
+      ]
+    } %}
+    {% if item.below %}
+      {% set link_attributes = link_attributes|merge({
+        'data-bs-toggle': 'dropdown',
+        'aria-expanded': 'false',
+        'aria-haspopup': 'true',
+      }) %}
+    {% endif %}
+
+    {# Nav Link. #}
+    {% block nav_link %}
+      {% if item.below %}
+        <a href="#" {{ create_attribute(link_attributes) }}>
+          <span class="menu-label">{{ item.title }}</span>
+          <i class="material-icons close text-info d-lg-none">keyboard_arrow_up</i>
+          <i class="material-icons open text-info d-lg-none">keyboard_arrow_down</i>
+        </a>
+      {% else %}
+        {{ link(item.title, item.url, link_attributes) }}
+      {% endif %}
+
+      {% include '@swat4/nav/mega-menu.html.twig' with {'items': item.below, 'level': 2, 'parent': item} only %}
+    {% endblock %}
+  </li>
+{% endblock %}

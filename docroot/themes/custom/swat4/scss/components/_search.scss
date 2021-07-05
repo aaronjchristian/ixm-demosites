@@ -1,0 +1,131 @@
+#search-overlay {
+  @include media-breakpoint-up(lg) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transition: opacity .15s linear;
+
+    &.open {
+      display: block;
+      opacity: 1;
+
+      .search-exit {
+        position: fixed;
+        top: 6rem;
+        right: -10px;
+        z-index: 1;
+        display: block;
+
+        button {
+          padding: 1rem 5rem;
+          border-radius: 5px;
+        }
+      }
+
+      form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .form--inline {
+          display: flex;
+          align-items: end;
+          font-size: 1.5rem;
+        }
+
+        .form-type-textfield {
+          display: block;
+
+          label {
+            color: $white;
+          }
+
+          .form-text {
+            padding: 0.5rem 0.75rem;
+          }
+
+          &::after {
+            bottom: 0.75rem;
+          }
+        }
+
+        .form-actions {
+          margin: 0 1rem;
+
+          .form-submit {
+            display: block;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .search-exit {
+    display: none;
+  }
+
+  form {
+    margin: 1rem 0;
+
+    label {
+      @include media-breakpoint-down(lg) {
+        @include visually-hidden();
+      }
+    }
+
+    .form-type-textfield {
+      position: relative;
+      display: flex;
+      float: none;
+      margin: 0;
+
+      &::after {
+        @include material-icons();
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.25rem;
+        color: $primary;
+        content: 'search';
+      }
+    }
+
+    .form-text {
+      width: 100%;
+      padding: 0.25rem 0.5rem;
+      margin: 0;
+      border: 0;
+      border-radius: 1.25rem;
+      box-shadow: 0 0 5px rgba($dark, 0.5);
+
+    }
+
+    .form-submit {
+      display: none;
+    }
+  }
+}
+
+.search-toggle {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: center;
+    &::before {
+      @include material-icons();
+      margin-right: 0.25rem;
+      content: 'search';
+    }
+  }
+}

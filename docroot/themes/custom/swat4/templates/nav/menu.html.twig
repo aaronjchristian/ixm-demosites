@@ -1,0 +1,31 @@
+{#
+/**
+ * Extension of base menu.
+ *
+ * Available Options:
+ * - justify_content:
+ *   - One of 'start', 'center', 'end', 'around', 'between'
+ *   - Default: false
+ * - flex_row:
+ *   - Setting to true invokes dropdown behavior.
+ *   - Default: false
+ * - nav_pills:
+ *   - Default: false
+ * - nav_tabs:
+ *   - Default: false
+ * - nav_fill:
+ *   - Default: false
+ *
+ * Override Variables:
+ * - set attributes = attributes.addClass('extra-nav-classes')
+ *
+ * Blocks:
+ * - menu:
+ *    - Override entire menu block.
+ * - nav_item:
+ *    - Override each <li>
+ * - nav_link:
+ *    - Override each <a>
+ */
+#}
+{% extends '@swat4/nav/base/base__menu.html.twig' %}

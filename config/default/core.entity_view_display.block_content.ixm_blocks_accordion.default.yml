@@ -5,8 +5,9 @@ dependencies:
   config:
     - block_content.type.ixm_blocks_accordion
     - field.field.block_content.ixm_blocks_accordion.body
-    - field.field.block_content.ixm_blocks_accordion.field_entity_reference_block
+    - field.field.block_content.ixm_blocks_accordion.field_entity_reference_paragraph
   module:
+    - entity_reference_revisions
     - text
 _core:
   default_config_hash: Zn48dqpPKLmTLlHP6DNsBPwVW6PTH2q92SNG7CHEKTg
@@ -22,14 +23,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_entity_reference_block:
+  field_entity_reference_paragraph:
+    type: entity_reference_revisions_entity_view
     weight: 1
-    label: hidden
+    label: above
     settings:
-      link: true
       view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: entity_reference_entity_view
     region: content
 hidden:
   entity_print_view_epub: true

@@ -1,0 +1,7 @@
+project:
+  theme:
+    human_name: SWAT4
+    name: swat4
+    description: 'Custom theme for SWAT4.'
+    dir: '${docroot}/themes/custom/swat4'
+    status: true

@@ -9,7 +9,7 @@
         "acquia/drupal-spec-tool": "*",
         "acquia/lightning": "dev-8.x-4.x",
         "acquia/memcache-settings": "*",
-        "bower-asset/bootstrap": "^4.4",
+        "bower-asset/bootstrap": "^5.0.0",
         "drupal/acquia_connector": "^1.5.0",
         "drupal/acquia_purge": "^1.0-beta3",
         "drupal/admin_toolbar": "^2.3",
@@ -38,8 +38,8 @@
         "drupal/seckit": "^1.0.0-alpha2",
         "drupal/section_library": "dev-master",
         "drupal/shield": "^1.2.0",
-        "imagex/swat": "^3.0",
-        "npm-asset/popper.js": "^1.16"
+        "drupal/twig_tweak": "^2.9",
+        "imagex/swat": "^4.0"
     },
     "require-dev": {
         "acquia/blt-require-dev": "11.x-dev"
@@ -111,6 +111,9 @@
         "patches": {
             "drupal/core": {
                 "1091852-104: Display Bug when using #states (Forms API) with Ajax Request": "https://www.drupal.org/files/issues/2019-11-19/1091852-104.patch"
+            },
+            "drupal/paragraphs": {
+                "Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2021-05-03/paragraphs-2901390-82-withtests.patch"
             }
         }
     },

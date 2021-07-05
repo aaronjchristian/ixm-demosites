@@ -1,0 +1,114 @@
+{#
+/**
+ * @file
+ * Theme to display a dropdown menu.
+ *
+ * Available variables:
+ * - level: An incrementing value for each item child.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+
+{# Set the number of columns to use #}
+{% set num_columns = 3 %}
+
+{% if items %}
+  {% set groupEvery = (items|length / num_columns)|round ?: 1 %}
+  {% set nav_attributes = create_attribute() %}
+  {% set nav_classes = nav_classes|default([
+    'dropdown-menu',
+    'level-' ~ level,
+    level == 2 ? 'megamenu',
+    level > 2 ? 'ps-3',
+  ]) %}
+  <div{{ nav_attributes.addClass(nav_classes) }}>
+
+    {# Level 2 content #}
+    {% if level == 2 %}
+      <div class="column-wrapper d-lg-flex">
+    {% endif %}
+
+      {% for item in items %}
+
+        {# Group 2nd level for mega menu. #}
+        {% if level == 2 and loop.first %}
+          <span class="flex-grow-1">
+        {% endif %}
+
+          {% set link_attributes = {
+            'class': [
+              'dropdown-item',
+              item.in_active_trail ? 'active',
+              item.url.getOption('attributes').class ? item.url.getOption('attributes').class | join(' '),
+            ]
+          } %}
+
+          {# Only support up to 3 levels. #}
+          {% if item.below and level < 3 %}
+            <div>
+
+              {# desktop. #}
+              {% set desktop_attributes = link_attributes|merge({
+                'class': link_attributes.class|merge([
+                  'd-none',
+                  'd-lg-flex',
+                ]) }) %}
+              {{ link(item.title, item.url, desktop_attributes) }}
+
+              {# mobile. #}
+              {% set link_attributes = link_attributes|merge({
+                'data-toggle': 'dropdown',
+                'aria-expanded': 'false',
+                'aria-haspopup': 'true',
+                'class': link_attributes.class|merge([
+                  'd-flex',
+                  'justify-content-between',
+                  'align-content-center',
+                  'pe-0',
+                  'd-lg-none',
+                ])
+              }) %}
+              <a href="#" {{ create_attribute(link_attributes) }}>
+                <span class="menu-label">{{ item.title }}</span>
+                <i class="material-icons close text-info d-lg-none">keyboard_arrow_up</i>
+                <i class="material-icons open text-info d-lg-none">keyboard_arrow_down</i>
+              </a>
+
+              {# Add another level #}
+              {% include '@swat4/nav/mega-menu.html.twig' with {'items': item.below, 'level': level + 1, 'parent': item} only %}
+            </div>
+          {% else %}
+            {{ link(item.title, item.url, link_attributes) }}
+          {% endif %}
+
+        {# Group 2nd level for mega menu. #}
+        {% if level == 2 and loop.last %}
+          </span>
+        {% elseif level == 2 and loop.index % groupEvery == 0 %}
+          </span><span class="flex-grow-1">
+        {% endif %}
+
+      {% endfor %}
+
+    {% if level == 2 %}
+      </div>
+    {% endif %}
+
+    {% if parent %}
+      {{ link('Explore ' ~ parent.title, parent.url, {'class': ['dropdown-item', 'd-lg-none']}) }}
+      <div class="d-none border-top text-end pt-3 mt-3 {{ level == 2 ? 'd-lg-block' }}">
+        {{ link('Explore ' ~ parent.title, parent.url, {'class': ['dropdown-item', 'py-lg-0', 'text-primary']}) }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

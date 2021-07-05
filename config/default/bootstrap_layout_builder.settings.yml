@@ -1,4 +1,4 @@
-hide_section_settings: 0
+hide_section_settings: false
 background_colors: ''
 background_image:
   bundle: image
@@ -8,3 +8,6 @@ background_local_video:
   field: field_media_video_file
 _core:
   default_config_hash: mYvx1OxwfcTIVvIytg2vuvfEBfRBNI-2KVrTesK-iMY
+live_preview: false
+responsive: false
+one_col_layout_class: col-12

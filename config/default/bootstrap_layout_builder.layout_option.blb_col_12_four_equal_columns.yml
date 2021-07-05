@@ -1,0 +1,15 @@
+uuid: 337d71d0-232d-4a2f-9731-03908cb0cf4f
+langcode: en
+status: true
+dependencies: {  }
+id: blb_col_12_four_equal_columns
+layout_id: blb_col_12
+label: '2 Equal Columns'
+structure: '6 6 6 6 6 6 6 6 6 6 6 6'
+default_breakpoints:
+  desktop: desktop
+breakpoints:
+  desktop: desktop
+  tablet: '0'
+  mobile: '0'
+weight: 0

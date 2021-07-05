@@ -1,0 +1,16 @@
+.block-help-block {
+  margin-top: 2rem;
+}
+
+.layout-builder-block {
+  background: transparent;
+}
+
+.region-content-top,
+.layout-builder-form {
+  @include make-container();
+}
+
+.tabs.primary {
+  margin: 1.5rem 0;
+}

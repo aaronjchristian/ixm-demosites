@@ -8,8 +8,8 @@ project:
     protocol: http
     hostname: '${env.VIRTUAL_HOST}'
   theme:
-    dir: '${docroot}/themes/custom/bs5'
-    name: bs5
+    dir: '${docroot}/themes/custom/swat4'
+    name: swat4
 drupal:
   db:
     database: default

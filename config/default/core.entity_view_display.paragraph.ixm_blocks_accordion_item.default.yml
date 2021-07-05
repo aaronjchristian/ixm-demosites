@@ -1,0 +1,32 @@
+uuid: cc934988-fb12-4637-9e14-7a55428049ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ixm_blocks_accordion_item.field_body
+    - field.field.paragraph.ixm_blocks_accordion_item.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_accordion_item
+  module:
+    - text
+id: paragraph.ixm_blocks_accordion_item.default
+targetEntityType: paragraph
+bundle: ixm_blocks_accordion_item
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

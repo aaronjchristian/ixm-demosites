@@ -1,0 +1,15 @@
+uuid: b6e3441d-e47e-4336-894a-c6ea8b78d156
+langcode: en
+status: true
+dependencies: {  }
+id: 4_equal_columns
+layout_id: 16_columns
+label: '4 Equal Columns'
+structure: '12'
+default_breakpoints:
+  desktop: desktop
+breakpoints:
+  desktop: desktop
+  tablet: '0'
+  mobile: '0'
+weight: 0

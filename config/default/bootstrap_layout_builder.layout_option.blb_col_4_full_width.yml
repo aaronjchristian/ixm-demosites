@@ -8,7 +8,11 @@ id: blb_col_4_full_width
 layout_id: blb_col_4
 label: 'Full width'
 structure: '12'
+default_breakpoints:
+  tablet: '0'
+  mobile: '0'
 breakpoints:
   tablet: tablet
   mobile: mobile
+  desktop: '0'
 weight: 0

@@ -1,0 +1,15 @@
+uuid: 34658256-4760-4ffa-8302-cc76e4317eed
+langcode: en
+status: true
+dependencies: {  }
+id: full_width
+layout_id: blb_col_12
+label: 'Full Width'
+structure: '12'
+default_breakpoints:
+  mobile: mobile
+breakpoints:
+  mobile: mobile
+  desktop: '0'
+  tablet: '0'
+weight: 0

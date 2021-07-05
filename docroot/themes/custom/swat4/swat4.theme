@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function swat4_preprocess_page(&$variables) {
+  // Fix for toolbar changing body padding.
+  if (\Drupal::currentUser()->hasPermission('access toolbar')) {
+    $variables['#attached']['library'][] = 'swat4/toolbar';
+  }
+}
+
+/**
+ * Implements hook_preprocess_image().
+ */
+function swat4_preprocess_image(&$vars) {
+  $vars['attributes']['class'][] = 'img-fluid';
+}
+
+/**
+ * Implements hook_preprocess_table().
+ */
+function swat4_preprocess_table(&$variables) {
+  $variables['attributes']['class'][] = 'table';
+}
+
+/**
+ * Implements hook_preprocess_table().
+ */
+function swat4_preprocess_views_view_table(&$variables) {
+  $variables['attributes']['class'][] = 'table';
+  $variables['attributes']['class'][] = 'table-striped';
+}
+
+/**
+ * Implements hook_preprocess_input().
+ */
+function swat4_preprocess_input(&$variables) {
+  if ($variables['element']['#type'] === 'submit') {
+
+    if ($variables['element']['#value'] === 'Preview') {
+      $variables['attributes']['class'][] = 'btn-secondary';
+    }
+
+    if (!in_array('btn', $variables['attributes']['class'])) {
+      $variables['attributes']['class'][] = 'btn';
+    }
+
+    if (empty(array_intersect([
+      'btn-primary',
+      'btn-primary-lighter',
+      'btn-secondary',
+      'btn-success',
+      'btn-warning',
+      'btn-danger',
+      'btn-link',
+      'btn-info',
+    ], $variables['attributes']['class']))) {
+      $variables['attributes']['class'][] = 'btn-secondary';
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.menu--main {
+
+  // Mega menu
+  @include media-breakpoint-up(lg) {
+    position: initial;
+
+    .has-megamenu {
+      position: static !important;
+
+      .megamenu {
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+      }
+
+      .dropdown-item {
+        background: none;
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+
+      .level-3 {
+        position: relative;
+        top: auto;
+        display: block !important;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    border: 0;
+  }
+
+  // Open / close toggles
+  .dropdown {
+    .nav-link,
+    .dropdown-item {
+      .open {
+        display: block;
+      }
+
+      .close {
+        display: none;
+      }
+
+      &.show {
+        .open {
+          display: none;
+        }
+
+        .close {
+          display: block;
+        }
+      }
+    }
+
+    &.show {
+      .nav-link {
+        .open {
+          display: none;
+        }
+
+        .close {
+          display: block;
+        }
+      }
+    }
+  }
+}

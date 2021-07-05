@@ -1,0 +1,31 @@
+uuid: 68d2d396-f51d-4bfe-a142-54f4727fb5f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_accordion
+    - field.storage.block_content.field_entity_reference_paragraph
+    - paragraphs.paragraphs_type.ixm_blocks_accordion_item
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_accordion.field_entity_reference_paragraph
+field_name: field_entity_reference_paragraph
+entity_type: block_content
+bundle: ixm_blocks_accordion
+label: 'Accordion Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ixm_blocks_accordion_item: ixm_blocks_accordion_item
+    target_bundles_drag_drop:
+      ixm_blocks_accordion_item:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

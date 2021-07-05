@@ -257,6 +257,7 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_1'
         - 'bootstrap_layout_builder:blb_col_2'
         - 'bootstrap_layout_builder:blb_col_3'
+        - 'bootstrap_layout_builder:blb_col_12'
       blacklisted_blocks:
         'Custom block types':
           - everything

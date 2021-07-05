@@ -1,22 +1,19 @@
-uuid: c7e51922-5233-4a81-b92b-b65fa9bde264
+uuid: c8635dad-a440-4124-8121-4d1387b0bb17
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.ixm_blocks_accordion_item
-    - field.field.block_content.ixm_blocks_accordion_item.body
-    - field.field.block_content.ixm_blocks_accordion_item.field_title
+    - field.field.paragraph.ixm_blocks_accordion_item.field_body
+    - field.field.paragraph.ixm_blocks_accordion_item.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_accordion_item
   module:
     - text
-_core:
-  default_config_hash: xPwrtjedo57CD7iUJFbwkuRNR-cRljQr9H9wm4vi1aU
-id: block_content.ixm_blocks_accordion_item.default
-targetEntityType: block_content
+id: paragraph.ixm_blocks_accordion_item.default
+targetEntityType: paragraph
 bundle: ixm_blocks_accordion_item
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
+  field_body:
     weight: 1
     settings:
       rows: 9
@@ -24,6 +21,7 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    type: text_textarea_with_summary
     region: content
   field_title:
     weight: 0
@@ -34,4 +32,5 @@ content:
     type: string_textfield
     region: content
 hidden:
-  info: true
+  created: true
+  status: true
