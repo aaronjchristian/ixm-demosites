@@ -1,0 +1,22 @@
+uuid: d169bce5-dfd4-454f-b8de-8d23fefa3a49
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swat4
+_core:
+  default_config_hash: mQn1JJ8qzfFQPjbdHC3D1naLDK3-T2xo7UChw7jT_lQ
+id: swat4_content
+theme: swat4
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

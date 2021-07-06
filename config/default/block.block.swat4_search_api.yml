@@ -1,0 +1,25 @@
+uuid: 352e0a62-50b3-4de2-8e30-e4f22ba59e62
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - swat4
+_core:
+  default_config_hash: CRj1dIXmPdgbkgGW2EF9Hs58GOLmRA7yWPCVWxFbLmg
+id: swat4_search_api
+theme: swat4
+region: search
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page'
+settings:
+  id: 'views_exposed_filter_block:search-page'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

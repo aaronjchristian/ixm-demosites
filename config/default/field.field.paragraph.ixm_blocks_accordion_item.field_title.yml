@@ -1,10 +1,12 @@
-uuid: fcb16684-0b68-4920-8dab-25957321c867
+uuid: 53ca77dd-21bc-4095-b8f0-3559004cde6e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
     - paragraphs.paragraphs_type.ixm_blocks_accordion_item
+_core:
+  default_config_hash: yYsPGbH1fgw-yka9xh3FlN5LDrElCLutpuI6GX4Fltg
 id: paragraph.ixm_blocks_accordion_item.field_title
 field_name: field_title
 entity_type: paragraph

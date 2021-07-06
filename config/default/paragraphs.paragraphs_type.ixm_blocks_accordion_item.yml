@@ -1,7 +1,9 @@
-uuid: 4fb6903a-1720-4e3d-a7b5-d657296669e3
+uuid: 3a73449f-bc24-4aee-8c11-8cde63cdab57
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: nQ3pL6j_sJZUahDvJc-SzAj5iTMa2ZDlHLR9ihz45VM
 id: ixm_blocks_accordion_item
 label: 'Accordion Item'
 icon_uuid: null

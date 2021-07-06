@@ -1,7 +1,10 @@
-uuid: 88227097-cc72-401b-bf06-afa228def75e
+uuid: f955c2e9-d9b1-4ac2-b967-ffe27a415e73
 langcode: en
 status: true
 dependencies: {  }
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_accordion/images/ixm_blocks_accordion.svg
 _core:
   default_config_hash: PMAe9Srx1KTf1DlDKn-zGWT1_GHvzbA45TiSAbZtefE
 id: ixm_blocks_accordion

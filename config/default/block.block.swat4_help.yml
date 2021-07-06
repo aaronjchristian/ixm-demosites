@@ -1,0 +1,22 @@
+uuid: 5535148a-7180-4475-9308-e0060e1b50fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - swat4
+_core:
+  default_config_hash: daetXXVslpAX7iBwNrCm-oqRUaKF2FGsGLfnXFUYWfU
+id: swat4_help
+theme: swat4
+region: content_top
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

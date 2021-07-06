@@ -1,4 +1,4 @@
-uuid: ee121410-f150-4a9a-9c48-eee60f5518de
+uuid: c4df400f-373f-460e-bf68-4a6afd4870d7
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - paragraphs
     - text
 _core:
-  default_config_hash: 6HMknqRjIF1teaBRPxjsoPPYId7waSJ5dyAhiQFBThE
+  default_config_hash: rTQKOlNQlU7oTQyByDEKxm8-ZNA1Aes8Dl-3F76uOPU
 id: block_content.ixm_blocks_accordion.default
 targetEntityType: block_content
 bundle: ixm_blocks_accordion

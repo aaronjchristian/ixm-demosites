@@ -1,0 +1,30 @@
+uuid: 8f495770-ef70-4a6a-bb2f-b39e10aed1ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+  theme:
+    - swat4
+_core:
+  default_config_hash: fHDwcV5ugy3TmWfs03urfucwnaomwgGyMb9OlWuhlFo
+id: swat4_breadcrumbs
+theme: swat4
+region: content
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

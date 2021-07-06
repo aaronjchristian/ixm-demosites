@@ -1,0 +1,27 @@
+uuid: bf9f1128-dcae-4aeb-972a-c906a6ad1b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - swat4
+_core:
+  default_config_hash: NBaJ6Tz4whuLcSDc3fl7JmJW_PlY7cj3r0OoXpwmULI
+id: swat4_tools
+theme: swat4
+region: sidebar
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

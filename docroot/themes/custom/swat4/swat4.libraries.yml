@@ -10,7 +10,7 @@ global-theming:
     - core/jquery
     - core/drupal
     - core/drupalSettings
-    - swat/fonts
+    - swat4/fonts
 
 bootstrap:
   version: VERSION

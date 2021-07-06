@@ -1,0 +1,27 @@
+uuid: f97fd0c8-2848-4fa1-834b-5525069abaf7
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.utility-menu
+  module:
+    - system
+  theme:
+    - swat4
+_core:
+  default_config_hash: CFH88eYfzNcTCfpZQfZwderRhncXP3pXHGNtgfozHxE
+id: swat4_utilitymenu
+theme: swat4
+region: header_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:utility-menu'
+settings:
+  id: 'system_menu_block:utility-menu'
+  label: 'Utility Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

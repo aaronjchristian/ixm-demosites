@@ -1,0 +1,20 @@
+uuid: 1724d315-ca13-4a06-bd42-87f05511b45d
+langcode: en
+status: false
+dependencies:
+  theme:
+    - swat4
+_core:
+  default_config_hash: vfTtQeP4UoFG-ErbFNFjhKW7HB_FE-v_8wmqlcww8jE
+id: swat4_local_actions
+theme: swat4
+region: content_top
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

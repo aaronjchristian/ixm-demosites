@@ -1,0 +1,27 @@
+uuid: e140b5d3-1029-4bfb-a9b4-aaed010d58f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - swat4
+_core:
+  default_config_hash: MN9TPZnz1kE5pGCxjjW71ekhJ5TBGSeyjKmOp5rM4VI
+id: swat4_main_menu
+theme: swat4
+region: navigation
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }

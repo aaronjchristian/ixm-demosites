@@ -1,4 +1,4 @@
-uuid: c8635dad-a440-4124-8121-4d1387b0bb17
+uuid: f60cf68f-9ce5-423d-bb3b-60fa78c0786b
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.ixm_blocks_accordion_item
   module:
     - text
+_core:
+  default_config_hash: HvbSPCL8En-LDecA2a6N8RStCpbSc8Z9GwdIOQEAPmg
 id: paragraph.ixm_blocks_accordion_item.default
 targetEntityType: paragraph
 bundle: ixm_blocks_accordion_item

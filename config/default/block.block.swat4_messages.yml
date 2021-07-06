@@ -1,0 +1,22 @@
+uuid: 8a291222-0f0f-4a62-9f9f-aa8bf5291134
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - swat4
+_core:
+  default_config_hash: SCokM-h5i4PR0cJYeCzJeaTWN7Al07UWxQm9u5XBX7s
+id: swat4_messages
+theme: swat4
+region: content_top
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
