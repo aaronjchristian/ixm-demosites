@@ -44,6 +44,7 @@ module:
   inline_entity_form: 0
   ixm_blocks: 0
   ixm_blocks_accordion: 0
+  ixm_blocks_table: 0
   jsonapi: 0
   kint: 0
   layout_builder: 0

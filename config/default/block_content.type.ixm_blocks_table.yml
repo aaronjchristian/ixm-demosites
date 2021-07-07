@@ -1,0 +1,15 @@
+uuid: cb1604a5-060b-4bdd-813d-6bc57419f9ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_table/images/ixm_blocks_table.svg
+_core:
+  default_config_hash: VUx_rb2vpE0lUTfAJvC-xt_Pu5FB1HqwXmByitHXPso
+id: ixm_blocks_table
+label: Table
+revision: 0
+description: 'A component for adding responsive tables.'

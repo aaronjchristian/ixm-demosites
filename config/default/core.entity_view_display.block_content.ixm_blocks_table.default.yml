@@ -1,0 +1,25 @@
+uuid: d756f709-5b49-4daf-bb12-08ae03abeb4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_table
+    - field.field.block_content.ixm_blocks_table.body
+  module:
+    - text
+_core:
+  default_config_hash: uB4qVN6HoVfsVsxxCayHjV9NqyypowRD4YoGXz8ilAA
+id: block_content.ixm_blocks_table.default
+targetEntityType: block_content
+bundle: ixm_blocks_table
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true
