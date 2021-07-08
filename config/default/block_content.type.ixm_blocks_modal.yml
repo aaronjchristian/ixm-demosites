@@ -1,0 +1,13 @@
+uuid: 8c4ecf06-5f3f-4cd5-888d-b833b6046f7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_modal/images/ixm_blocks_modal.svg
+id: ixm_blocks_modal
+label: Modal
+revision: 0
+description: 'A component for adding custom Modals.'

@@ -1,0 +1,23 @@
+uuid: dba0a804-6009-405d-9b71-082114ef3d92
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_modal
+    - field.storage.block_content.field_boolean
+id: block_content.ixm_blocks_modal.field_boolean
+field_name: field_boolean
+entity_type: block_content
+bundle: ixm_blocks_modal
+label: 'Trigger on page load'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
