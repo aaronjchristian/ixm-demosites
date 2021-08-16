@@ -1,0 +1,10 @@
+uuid: 10c9f3a3-c973-4352-8cae-0ce3f549c005
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_card
+label: Card
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

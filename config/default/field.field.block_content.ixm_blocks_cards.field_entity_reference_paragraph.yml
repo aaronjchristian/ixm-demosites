@@ -1,0 +1,37 @@
+uuid: 45f094a8-4358-499f-9f43-50db9d0595c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_cards
+    - field.storage.block_content.field_entity_reference_paragraph
+    - paragraphs.paragraphs_type.ixm_blocks_card
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_cards.field_entity_reference_paragraph
+field_name: field_entity_reference_paragraph
+entity_type: block_content
+bundle: ixm_blocks_cards
+label: Card
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ixm_blocks_card: ixm_blocks_card
+    target_bundles_drag_drop:
+      ixm_blocks_accordion_item:
+        weight: 4
+        enabled: false
+      ixm_blocks_card:
+        enabled: true
+        weight: 5
+      ixm_blocks_hero_banner:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

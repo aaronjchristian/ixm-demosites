@@ -1,0 +1,55 @@
+uuid: d55c76fb-8f3f-428f-af02-58084afad481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ixm_blocks_card.field_body
+    - field.field.paragraph.ixm_blocks_card.field_links
+    - field.field.paragraph.ixm_blocks_card.field_media_element
+    - field.field.paragraph.ixm_blocks_card.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_card
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.ixm_blocks_card.default
+targetEntityType: paragraph
+bundle: ixm_blocks_card
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_links:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_media_element:
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

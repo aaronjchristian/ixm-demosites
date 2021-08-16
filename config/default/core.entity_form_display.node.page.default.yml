@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_banner
     - field.field.node.page.field_meta_tags
     - field.field.node.page.layout_selection
     - node.type.page
+    - workflows.workflow.editorial
   module:
+    - content_moderation
+    - inline_entity_form
     - metatag
     - path
     - text
@@ -20,35 +24,59 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_banner:
+    type: inline_entity_form_complex
+    weight: 0
+    settings:
+      form_mode: default
+      revision: false
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
     third_party_settings: {  }
     region: content
   field_meta_tags:
     type: metatag_firehose
     region: content
-    weight: 51
+    weight: 11
     settings:
       sidebar: true
     third_party_settings: {  }
   layout_selection:
     type: options_select
     region: content
-    weight: 26
+    weight: 9
     settings: {  }
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 12
+    settings: {  }
+    region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -56,12 +84,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 4
     third_party_settings: {  }
     region: content
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 8
     settings:
       display_label: true
     third_party_settings: {  }
@@ -70,12 +98,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     third_party_settings: {  }
     region: content
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -83,7 +111,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -92,8 +120,8 @@ content:
     third_party_settings: {  }
     region: content
   url_redirects:
-    weight: 50
+    weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

@@ -1,0 +1,8 @@
+uuid: a988cc41-1f16-4a29-a89d-8a9ebdaa38e7
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_cards
+label: Cards
+revision: 0
+description: 'A component for adding custom cards.'
