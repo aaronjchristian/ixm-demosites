@@ -1,4 +1,4 @@
-uuid: 8c4ecf06-5f3f-4cd5-888d-b833b6046f7c
+uuid: ac962089-0700-4b39-bccd-48b3ab100a0c
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
 third_party_settings:
   block_library:
     icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_modal/images/ixm_blocks_modal.svg
+_core:
+  default_config_hash: Z3gs9c2n3J20lXYUk36fQxSiiC4SjcrQwNebI_0E1YE
 id: ixm_blocks_modal
 label: Modal
 revision: 0

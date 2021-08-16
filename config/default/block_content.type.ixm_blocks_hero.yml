@@ -1,0 +1,15 @@
+uuid: d38cfd71-aa8f-4379-b1df-93d63ab7ea63
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_hero/images/ixm_blocks_hero.svg
+_core:
+  default_config_hash: 8q9hnA_i4NlAEdaOY3CcgGinAFJeyqlpIQ9jnJcYtUU
+id: ixm_blocks_hero
+label: 'Hero Banner'
+revision: 0
+description: 'A component for adding responsive tables.'

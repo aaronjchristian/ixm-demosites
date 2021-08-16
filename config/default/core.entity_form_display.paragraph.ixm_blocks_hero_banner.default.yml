@@ -1,0 +1,55 @@
+uuid: 8914e3f7-771d-4e75-b633-ffb1367f19e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ixm_blocks_hero_banner.field_body
+    - field.field.paragraph.ixm_blocks_hero_banner.field_links
+    - field.field.paragraph.ixm_blocks_hero_banner.field_media_element
+    - field.field.paragraph.ixm_blocks_hero_banner.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_hero_banner
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.ixm_blocks_hero_banner.default
+targetEntityType: paragraph
+bundle: ixm_blocks_hero_banner
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_links:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_media_element:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

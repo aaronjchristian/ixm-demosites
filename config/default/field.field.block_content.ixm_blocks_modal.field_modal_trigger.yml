@@ -1,10 +1,12 @@
-uuid: 7e93a5ab-3aeb-46c5-84a5-27db30330c84
+uuid: bf01b9cf-f89c-48bc-b5ef-b87c52667f7a
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.ixm_blocks_modal
     - field.storage.block_content.field_modal_trigger
+_core:
+  default_config_hash: vfkUD0jotsj6hyFJdRcZEeFblVeFdXMy2mFS9WVqBug
 id: block_content.ixm_blocks_modal.field_modal_trigger
 field_name: field_modal_trigger
 entity_type: block_content
