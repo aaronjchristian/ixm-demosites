@@ -40,6 +40,7 @@ field_settings:
       view_mode:
         'entity:node':
           landing_page: full
+          news: default
           page: default
   status:
     label: null
@@ -156,6 +157,7 @@ processor_settings:
       preprocess_index: -6
       preprocess_query: -5
     all_fields: false
+    ignored: ._-
   transliteration:
     fields:
       - label

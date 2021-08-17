@@ -1,17 +1,29 @@
-uuid: de3eb6b5-492e-4319-86ce-fb68a406c77b
+uuid: b8c84477-c904-498c-8e38-9b2b1d7b40a6
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.ixm_blocks_cards
+    - field.field.block_content.ixm_blocks_cards.field_content_reference
     - field.field.block_content.ixm_blocks_cards.field_entity_reference_paragraph
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: 7IU5QZXTx1eY7PmbhDNAiipaQwLzwMj6zZOqlufQGIs
 id: block_content.ixm_blocks_cards.default
 targetEntityType: block_content
 bundle: ixm_blocks_cards
 mode: default
 content:
+  field_content_reference:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_entity_reference_paragraph:
     weight: 0
     label: hidden

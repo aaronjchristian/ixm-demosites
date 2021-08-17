@@ -2,6 +2,10 @@ uuid: 051a1219-a31d-43f2-93e1-6ae31267a33d
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.landing_page
+    - node.type.news
+    - node.type.page
   module:
     - content_moderation
 _core:
@@ -71,4 +75,5 @@ type_settings:
   entity_types:
     node:
       - landing_page
+      - news
       - page

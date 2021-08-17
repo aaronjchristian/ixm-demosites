@@ -1,17 +1,30 @@
-uuid: 2e91bdd6-d443-4cb8-9652-e035edff56e0
+uuid: 4fbf7bdb-8dd2-4127-a5d4-0855e2389e23
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.ixm_blocks_cards
+    - field.field.block_content.ixm_blocks_cards.field_content_reference
     - field.field.block_content.ixm_blocks_cards.field_entity_reference_paragraph
   module:
     - paragraphs
+_core:
+  default_config_hash: uFH1Zh4e4ZhMTQer7rOyUKgmHZnJixFlywIkQhqkrPo
 id: block_content.ixm_blocks_cards.default
 targetEntityType: block_content
 bundle: ixm_blocks_cards
 mode: default
 content:
+  field_content_reference:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_entity_reference_paragraph:
     weight: 26
     settings:

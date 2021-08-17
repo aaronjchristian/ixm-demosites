@@ -1,4 +1,4 @@
-uuid: 45f094a8-4358-499f-9f43-50db9d0595c5
+uuid: b378c842-600e-4807-94ff-93f06746d027
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.ixm_blocks_card
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: zpHXxvZXhx6WxGSZHiyGAnG1oYkGMepSOfbk2apEIKE
 id: block_content.ixm_blocks_cards.field_entity_reference_paragraph
 field_name: field_entity_reference_paragraph
 entity_type: block_content

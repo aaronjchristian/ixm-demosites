@@ -1,4 +1,4 @@
-uuid: 9c11229c-0d96-4625-af39-721ee2c682fc
+uuid: 1aa88437-2461-4f3a-b7e3-743f45ba170f
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - field.storage.paragraph.field_media_element
     - media.type.image
     - paragraphs.paragraphs_type.ixm_blocks_card
+_core:
+  default_config_hash: bZuNdssc9vhC0ieKPSSrIVvQ1QfeDLLQtQjBsBeAgvk
 id: paragraph.ixm_blocks_card.field_media_element
 field_name: field_media_element
 entity_type: paragraph

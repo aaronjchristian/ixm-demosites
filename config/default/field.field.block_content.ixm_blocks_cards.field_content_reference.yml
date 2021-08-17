@@ -1,0 +1,26 @@
+uuid: ce604951-6703-46c8-8e81-7dbffee358a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_cards
+    - field.storage.block_content.field_content_reference
+id: block_content.ixm_blocks_cards.field_content_reference
+field_name: field_content_reference
+entity_type: block_content
+bundle: ixm_blocks_cards
+label: 'Card from Node'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

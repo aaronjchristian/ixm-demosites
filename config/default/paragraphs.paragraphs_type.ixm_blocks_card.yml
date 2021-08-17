@@ -1,7 +1,9 @@
-uuid: 10c9f3a3-c973-4352-8cae-0ce3f549c005
+uuid: 09a65ba5-c096-4633-9db8-5dc9a117a49f
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: lwNK12Dv0x1j6PsDF6BnU9LEnGXEroksdUFFbd3hzS4
 id: ixm_blocks_card
 label: Card
 icon_uuid: null

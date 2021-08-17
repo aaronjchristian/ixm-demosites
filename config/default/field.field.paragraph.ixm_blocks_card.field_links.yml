@@ -1,4 +1,4 @@
-uuid: 6519f6dc-0ff3-4711-a911-132181f0dd02
+uuid: 3387bc4f-3465-4389-ba3a-c558d7034138
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.ixm_blocks_card
   module:
     - link
+_core:
+  default_config_hash: YGTg2c1jzdP0ZocF_aTAtGSy9B_3CREQcyLVvIIFgpc
 id: paragraph.ixm_blocks_card.field_links
 field_name: field_links
 entity_type: paragraph

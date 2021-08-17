@@ -1,7 +1,14 @@
-uuid: a988cc41-1f16-4a29-a89d-8a9ebdaa38e7
+uuid: d90580fc-a1af-496e-bf58-78c5d28846cf
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_cards/images/ixm_blocks_cards.svg
+_core:
+  default_config_hash: A6hGFTv69FBDjJNXqzIVH7m7M6b0RN6Gp_RXSDF-wo4
 id: ixm_blocks_cards
 label: Cards
 revision: 0
