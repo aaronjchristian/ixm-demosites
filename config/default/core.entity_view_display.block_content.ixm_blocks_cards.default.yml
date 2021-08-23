@@ -1,4 +1,4 @@
-uuid: b8c84477-c904-498c-8e38-9b2b1d7b40a6
+uuid: da2b39f8-b421-4ba5-8c82-8012c825437f
 langcode: en
 status: true
 dependencies:
@@ -15,15 +15,6 @@ targetEntityType: block_content
 bundle: ixm_blocks_cards
 mode: default
 content:
-  field_content_reference:
-    weight: 1
-    label: hidden
-    settings:
-      link: true
-      view_mode: default
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
   field_entity_reference_paragraph:
     weight: 0
     label: hidden
@@ -34,4 +25,5 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
 hidden:
+  field_content_reference: true
   search_api_excerpt: true

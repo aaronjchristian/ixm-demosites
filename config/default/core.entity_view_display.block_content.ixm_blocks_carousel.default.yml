@@ -1,0 +1,25 @@
+uuid: de00b1d8-ab13-482e-a6a6-dbce17a466f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_carousel
+    - field.field.block_content.ixm_blocks_carousel.field_entity_reference_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_carousel.default
+targetEntityType: block_content
+bundle: ixm_blocks_carousel
+mode: default
+content:
+  field_entity_reference_paragraph:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

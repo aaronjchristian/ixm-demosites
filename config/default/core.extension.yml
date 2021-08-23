@@ -43,7 +43,9 @@ module:
   image_widget_crop: 0
   inline_entity_form: 0
   ixm_blocks: 0
+  ixm_blocks_accordion: 0
   ixm_blocks_cards: 0
+  ixm_blocks_carousel: 0
   jsonapi: 0
   kint: 0
   layout_builder: 0

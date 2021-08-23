@@ -43,6 +43,7 @@ inline_entity_form: 1.0.0-rc6
 ixm_blocks: 0.0.0
 ixm_blocks_accordion: 0.0.0
 ixm_blocks_cards: 0.0.0
+ixm_blocks_carousel: 0.0.0
 jsonapi: 0.0.0
 kint: 2.1.0
 layout_builder: 8.9.1

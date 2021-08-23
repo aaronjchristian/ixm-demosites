@@ -1,19 +1,19 @@
-uuid: 66d4167f-ba63-468d-adcb-41767f6698fb
+uuid: e412665a-2acc-4c52-9a1e-960ecd839c6f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.paragraph.field_media_element
     - media.type.image
-    - node.type.news
-id: node.news.field_image
-field_name: field_image
-entity_type: node
-bundle: news
+    - paragraphs.paragraphs_type.ixm_blocks_carousel_item
+id: paragraph.ixm_blocks_carousel_item.field_media_element
+field_name: field_media_element
+entity_type: paragraph
+bundle: ixm_blocks_carousel_item
 label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

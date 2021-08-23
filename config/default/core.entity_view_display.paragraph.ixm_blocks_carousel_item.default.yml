@@ -1,0 +1,42 @@
+uuid: 3de4a4c2-9fd7-4458-8996-54a357d74da8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ixm_blocks_carousel_item.field_body
+    - field.field.paragraph.ixm_blocks_carousel_item.field_media_element
+    - field.field.paragraph.ixm_blocks_carousel_item.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_carousel_item
+  module:
+    - text
+id: paragraph.ixm_blocks_carousel_item.default
+targetEntityType: paragraph
+bundle: ixm_blocks_carousel_item
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_element:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

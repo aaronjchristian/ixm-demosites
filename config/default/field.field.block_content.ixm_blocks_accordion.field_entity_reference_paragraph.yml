@@ -1,23 +1,23 @@
-uuid: a524a592-f36c-42ac-99f2-a0057ab7515d
+uuid: 24a45ba0-50fa-4b7a-b063-491813754497
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.ixm_blocks_cards
+    - block_content.type.ixm_blocks_accordion
     - field.storage.block_content.field_entity_reference_paragraph
-    - paragraphs.paragraphs_type.ixm_blocks_card
+    - paragraphs.paragraphs_type.ixm_blocks_accordion_item
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: zpHXxvZXhx6WxGSZHiyGAnG1oYkGMepSOfbk2apEIKE
-id: block_content.ixm_blocks_cards.field_entity_reference_paragraph
+  default_config_hash: FoXJmnM_Te5iksc50y_BSWaw6lzRq8JEJQLDx9wEt-c
+id: block_content.ixm_blocks_accordion.field_entity_reference_paragraph
 field_name: field_entity_reference_paragraph
 entity_type: block_content
-bundle: ixm_blocks_cards
-label: Card
+bundle: ixm_blocks_accordion
+label: 'Accordion Item'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -25,15 +25,9 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      ixm_blocks_card: ixm_blocks_card
+      ixm_blocks_accordion_item: ixm_blocks_accordion_item
     target_bundles_drag_drop:
       ixm_blocks_accordion_item:
-        weight: 4
-        enabled: false
-      ixm_blocks_card:
         enabled: true
-        weight: 5
-      ixm_blocks_hero_banner:
-        weight: 6
-        enabled: false
+        weight: 2
 field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: 2698f457-91dc-40b7-9200-8f9c23d52854
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_carousel_item
+label: 'Carousel Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

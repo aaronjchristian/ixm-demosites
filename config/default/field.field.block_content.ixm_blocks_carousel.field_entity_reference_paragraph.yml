@@ -1,20 +1,18 @@
-uuid: a524a592-f36c-42ac-99f2-a0057ab7515d
+uuid: 763d58aa-89bf-4dfc-8729-3c781ac5942c
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.ixm_blocks_cards
+    - block_content.type.ixm_blocks_carousel
     - field.storage.block_content.field_entity_reference_paragraph
-    - paragraphs.paragraphs_type.ixm_blocks_card
+    - paragraphs.paragraphs_type.ixm_blocks_carousel_item
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: zpHXxvZXhx6WxGSZHiyGAnG1oYkGMepSOfbk2apEIKE
-id: block_content.ixm_blocks_cards.field_entity_reference_paragraph
+id: block_content.ixm_blocks_carousel.field_entity_reference_paragraph
 field_name: field_entity_reference_paragraph
 entity_type: block_content
-bundle: ixm_blocks_cards
-label: Card
+bundle: ixm_blocks_carousel
+label: 'Carousel Item'
 description: ''
 required: false
 translatable: true
@@ -25,15 +23,12 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      ixm_blocks_card: ixm_blocks_card
+      ixm_blocks_carousel_item: ixm_blocks_carousel_item
     target_bundles_drag_drop:
       ixm_blocks_accordion_item:
-        weight: 4
+        weight: 3
         enabled: false
-      ixm_blocks_card:
+      ixm_blocks_carousel_item:
         enabled: true
-        weight: 5
-      ixm_blocks_hero_banner:
-        weight: 6
-        enabled: false
+        weight: 4
 field_type: entity_reference_revisions

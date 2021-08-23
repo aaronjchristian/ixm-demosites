@@ -1,0 +1,15 @@
+uuid: d72d28be-9b99-47c1-b726-beaf6bf52578
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_accordion/images/ixm_blocks_accordion.svg
+_core:
+  default_config_hash: 9lNq-RZPS5DlZPhIdEbIJoRjDrG_7T3mb0l5FDy-cS0
+id: ixm_blocks_accordion
+label: Accordion
+revision: 0
+description: 'A component for adding custom Accordions.'

@@ -1,0 +1,13 @@
+uuid: 489fc339-5e12-43c0-99de-78905276b340
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_carousel/images/ixm_blocks_carousel.svg
+id: ixm_blocks_carousel
+label: Carousel
+revision: 0
+description: 'A component for adding custom carousels.'

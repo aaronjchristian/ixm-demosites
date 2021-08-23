@@ -1,10 +1,12 @@
-uuid: ce604951-6703-46c8-8e81-7dbffee358a5
+uuid: b988326c-91da-48d4-9ed0-42bfb49ce577
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.ixm_blocks_cards
     - field.storage.block_content.field_content_reference
+_core:
+  default_config_hash: 5RTM45XyY6APl1HuT_GpuSWgusNCGzRKWe2ZM7a7wo0
 id: block_content.ixm_blocks_cards.field_content_reference
 field_name: field_content_reference
 entity_type: block_content
@@ -18,7 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles:
+    target_bundles: null
     sort:
       field: _none
     auto_create: false

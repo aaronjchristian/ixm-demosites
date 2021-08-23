@@ -1,16 +1,14 @@
-uuid: 1e6e4e67-5c81-4808-8389-b4d6ef6e576d
+uuid: 5a114bc5-6578-4a51-a199-39272f5006ed
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.ixm_blocks_card
-_core:
-  default_config_hash: Fwlh25aM8lfTlYTRqjWKWiok-qiXe73EEA8GjmIuhu8
-id: paragraph.ixm_blocks_card.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_carousel_item
+id: paragraph.ixm_blocks_carousel_item.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: ixm_blocks_card
+bundle: ixm_blocks_carousel_item
 label: Title
 description: ''
 required: false

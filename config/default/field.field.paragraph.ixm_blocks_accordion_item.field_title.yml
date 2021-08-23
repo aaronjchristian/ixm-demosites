@@ -1,0 +1,21 @@
+uuid: 469daf37-4f5b-459a-bab6-c6abb1184ec2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_accordion_item
+_core:
+  default_config_hash: yYsPGbH1fgw-yka9xh3FlN5LDrElCLutpuI6GX4Fltg
+id: paragraph.ixm_blocks_accordion_item.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: ixm_blocks_accordion_item
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

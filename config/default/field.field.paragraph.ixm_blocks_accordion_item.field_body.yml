@@ -1,22 +1,22 @@
-uuid: 6a21f5b6-84fa-42c4-8e4b-c7563d258a3c
+uuid: 8fdf964a-7a3a-4cc8-a9e1-64798ece1020
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_body
-    - paragraphs.paragraphs_type.ixm_blocks_card
+    - paragraphs.paragraphs_type.ixm_blocks_accordion_item
   module:
     - text
 _core:
-  default_config_hash: MRMdExT6HIzG71aAY_ZfTL_hEeVXCLXVZLAuTY7tIWQ
-id: paragraph.ixm_blocks_card.field_body
+  default_config_hash: XDBsE1fN78f1nKkkTR9SKcJj7AGNnBpwHEwATi5JbzY
+id: paragraph.ixm_blocks_accordion_item.field_body
 field_name: field_body
 entity_type: paragraph
-bundle: ixm_blocks_card
+bundle: ixm_blocks_accordion_item
 label: Body
 description: ''
-required: false
-translatable: true
+required: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
