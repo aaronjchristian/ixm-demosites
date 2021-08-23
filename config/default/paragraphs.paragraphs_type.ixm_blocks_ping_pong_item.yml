@@ -1,0 +1,10 @@
+uuid: c78ca42b-7ff1-42df-99ab-3158ffcde10f
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_ping_pong_item
+label: 'Ping-Pong Item'
+icon_uuid: null
+icon_default: null
+description: 'Subcomponent for the Ping-Pong block.'
+behavior_plugins: {  }

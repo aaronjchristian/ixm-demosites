@@ -1,0 +1,25 @@
+uuid: a117dddc-5f26-4b4b-9cb5-25114bf83173
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_ping_pong
+    - field.field.block_content.ixm_blocks_ping_pong.field_entity_reference_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_ping_pong.default
+targetEntityType: block_content
+bundle: ixm_blocks_ping_pong
+mode: default
+content:
+  field_entity_reference_paragraph:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

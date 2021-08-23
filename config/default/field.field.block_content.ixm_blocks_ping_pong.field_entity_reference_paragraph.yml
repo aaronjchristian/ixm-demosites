@@ -1,0 +1,40 @@
+uuid: 0ad07089-e6eb-48c5-b40a-03c3a825476f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_ping_pong
+    - field.storage.block_content.field_entity_reference_paragraph
+    - paragraphs.paragraphs_type.ixm_blocks_ping_pong_item
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_ping_pong.field_entity_reference_paragraph
+field_name: field_entity_reference_paragraph
+entity_type: block_content
+bundle: ixm_blocks_ping_pong
+label: 'Ping-Pong Item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ixm_blocks_ping_pong_item: ixm_blocks_ping_pong_item
+    target_bundles_drag_drop:
+      ixm_blocks_accordion_item:
+        weight: 5
+        enabled: false
+      ixm_blocks_card:
+        weight: 6
+        enabled: false
+      ixm_blocks_carousel_item:
+        weight: 7
+        enabled: false
+      ixm_blocks_ping_pong_item:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

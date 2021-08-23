@@ -1,0 +1,8 @@
+uuid: d8b0bf8f-33f1-4b03-a6f7-08d2d90f5fcd
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_ping_pong
+label: Ping-Pong
+revision: 0
+description: 'A component for adding custom Ping-Pong blocks.'

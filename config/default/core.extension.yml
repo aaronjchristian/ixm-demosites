@@ -46,6 +46,7 @@ module:
   ixm_blocks_accordion: 0
   ixm_blocks_cards: 0
   ixm_blocks_carousel: 0
+  ixm_blocks_ping_pong: 0
   jsonapi: 0
   kint: 0
   layout_builder: 0
