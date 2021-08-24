@@ -1,0 +1,19 @@
+uuid: 035e39dd-e672-45dd-824e-031814fa6b7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_prefix_text
+    - paragraphs.paragraphs_type.ixm_blocks_statistics_item
+id: paragraph.ixm_blocks_statistics_item.field_prefix_text
+field_name: field_prefix_text
+entity_type: paragraph
+bundle: ixm_blocks_statistics_item
+label: Prefix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

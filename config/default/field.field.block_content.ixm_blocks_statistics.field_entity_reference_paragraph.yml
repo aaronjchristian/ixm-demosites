@@ -1,0 +1,43 @@
+uuid: f9c98105-f767-437d-8f84-bb37b1e861d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_statistics
+    - field.storage.block_content.field_entity_reference_paragraph
+    - paragraphs.paragraphs_type.ixm_blocks_statistics_item
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_statistics.field_entity_reference_paragraph
+field_name: field_entity_reference_paragraph
+entity_type: block_content
+bundle: ixm_blocks_statistics
+label: Statistic
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ixm_blocks_statistics_item: ixm_blocks_statistics_item
+    target_bundles_drag_drop:
+      ixm_blocks_accordion_item:
+        weight: 6
+        enabled: false
+      ixm_blocks_card:
+        weight: 7
+        enabled: false
+      ixm_blocks_carousel_item:
+        weight: 8
+        enabled: false
+      ixm_blocks_ping_pong_item:
+        weight: 9
+        enabled: false
+      ixm_blocks_statistics_item:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

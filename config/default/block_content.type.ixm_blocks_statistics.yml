@@ -1,0 +1,8 @@
+uuid: d903b132-732d-453f-870b-ffafa30e1b81
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_statistics
+label: Statistics
+revision: 0
+description: 'A component for adding custom Statistics.'

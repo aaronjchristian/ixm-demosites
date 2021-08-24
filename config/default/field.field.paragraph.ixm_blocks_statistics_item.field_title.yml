@@ -1,0 +1,19 @@
+uuid: 71a97de4-ead0-48ef-86f0-e8a5f2a44f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_statistics_item
+id: paragraph.ixm_blocks_statistics_item.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: ixm_blocks_statistics_item
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

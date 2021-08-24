@@ -1,0 +1,25 @@
+uuid: d5e07852-912c-4e31-bb88-a8b1d454d98f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_statistics
+    - field.field.block_content.ixm_blocks_statistics.field_entity_reference_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_statistics.default
+targetEntityType: block_content
+bundle: ixm_blocks_statistics
+mode: default
+content:
+  field_entity_reference_paragraph:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 361a375a-dd0d-4ab6-89c2-5051fb5a4ac6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_field_suffix_text
+    - paragraphs.paragraphs_type.ixm_blocks_statistics_item
+id: paragraph.ixm_blocks_statistics_item.field_field_suffix_text
+field_name: field_field_suffix_text
+entity_type: paragraph
+bundle: ixm_blocks_statistics_item
+label: Suffix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

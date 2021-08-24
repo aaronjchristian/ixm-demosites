@@ -1,0 +1,23 @@
+uuid: 91a9f2a4-d1d5-4c31-85ec-7f32fa70d871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.ixm_blocks_statistics_item
+  module:
+    - text
+id: paragraph.ixm_blocks_statistics_item.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: ixm_blocks_statistics_item
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

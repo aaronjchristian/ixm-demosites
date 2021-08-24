@@ -1,0 +1,10 @@
+uuid: 2d5339ce-fa44-439d-9dca-27c5b6e34a0f
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_statistics_item
+label: 'Statistics Item'
+icon_uuid: null
+icon_default: null
+description: 'Subcomponent for the Statistics block.'
+behavior_plugins: {  }

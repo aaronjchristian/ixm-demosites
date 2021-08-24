@@ -1,0 +1,33 @@
+uuid: ae86e3e4-dd8c-4e38-a778-ffc33e2ef2d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_statistics
+    - field.field.block_content.ixm_blocks_statistics.field_entity_reference_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_statistics.default
+targetEntityType: block_content
+bundle: ixm_blocks_statistics
+mode: default
+content:
+  field_entity_reference_paragraph:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,28 @@
+uuid: c028146a-5c91-48b6-8173-55e4a40f0fdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_element
+    - media.type.image
+    - paragraphs.paragraphs_type.ixm_blocks_statistics_item
+id: paragraph.ixm_blocks_statistics_item.field_media_element
+field_name: field_media_element
+entity_type: paragraph
+bundle: ixm_blocks_statistics_item
+label: 'Media '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
