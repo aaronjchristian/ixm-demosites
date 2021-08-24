@@ -1,0 +1,35 @@
+uuid: 4c030a88-59fc-47b1-9c17-1d1b42c812d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_table
+    - field.field.block_content.ixm_blocks_table.body
+  module:
+    - text
+_core:
+  default_config_hash: 5Mt6CV3zJR96qgey0njS2RpcSCf_ljowGqSNNGOc2WU
+id: block_content.ixm_blocks_table.default
+targetEntityType: block_content
+bundle: ixm_blocks_table
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 56a68189-f905-4477-a749-78e25671e260
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_modal
+    - field.storage.block_content.field_modal_trigger
+_core:
+  default_config_hash: vfkUD0jotsj6hyFJdRcZEeFblVeFdXMy2mFS9WVqBug
+id: block_content.ixm_blocks_modal.field_modal_trigger
+field_name: field_modal_trigger
+entity_type: block_content
+bundle: ixm_blocks_modal
+label: 'Modal Trigger Text/Button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

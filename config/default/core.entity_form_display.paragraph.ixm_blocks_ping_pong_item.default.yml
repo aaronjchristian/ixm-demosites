@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_body
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_links
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_media_element
+    - field.field.paragraph.ixm_blocks_ping_pong_item.field_ping_pong_options
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_title
     - paragraphs.paragraphs_type.ixm_blocks_ping_pong_item
   module:
@@ -18,7 +19,7 @@ bundle: ixm_blocks_ping_pong_item
 mode: default
 content:
   field_body:
-    weight: 2
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -28,7 +29,7 @@ content:
     type: text_textarea_with_summary
     region: content
   field_links:
-    weight: 3
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -36,14 +37,20 @@ content:
     type: link_default
     region: content
   field_media_element:
-    weight: 0
+    weight: 1
     settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
+  field_ping_pong_options:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_title:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''

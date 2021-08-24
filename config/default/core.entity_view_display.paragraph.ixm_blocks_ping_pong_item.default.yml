@@ -6,10 +6,12 @@ dependencies:
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_body
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_links
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_media_element
+    - field.field.paragraph.ixm_blocks_ping_pong_item.field_ping_pong_options
     - field.field.paragraph.ixm_blocks_ping_pong_item.field_title
     - paragraphs.paragraphs_type.ixm_blocks_ping_pong_item
   module:
     - link
+    - options
     - text
 id: paragraph.ixm_blocks_ping_pong_item.default
 targetEntityType: paragraph
@@ -18,14 +20,14 @@ mode: default
 content:
   field_body:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_links:
     weight: 3
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -37,15 +39,23 @@ content:
     region: content
   field_media_element:
     weight: 2
-    label: above
+    label: hidden
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
+    region: content
+  field_ping_pong_options:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

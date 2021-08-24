@@ -2,6 +2,9 @@ uuid: d8b0bf8f-33f1-4b03-a6f7-08d2d90f5fcd
 langcode: en
 status: true
 dependencies: {  }
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_ping_pong/images/ixm_blocks_ping_pong.svg
 id: ixm_blocks_ping_pong
 label: Ping-Pong
 revision: 0
