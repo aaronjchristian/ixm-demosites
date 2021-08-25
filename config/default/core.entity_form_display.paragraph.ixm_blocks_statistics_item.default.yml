@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.ixm_blocks_statistics_item.field_body
-    - field.field.paragraph.ixm_blocks_statistics_item.field_field_suffix_text
+    - field.field.paragraph.ixm_blocks_statistics_item.field_suffix_text
     - field.field.paragraph.ixm_blocks_statistics_item.field_media_element
     - field.field.paragraph.ixm_blocks_statistics_item.field_number_integer
     - field.field.paragraph.ixm_blocks_statistics_item.field_prefix_text
@@ -28,14 +28,6 @@ content:
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
-  field_field_suffix_text:
-    weight: 3
-    settings:
-      size: 10
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_media_element:
     weight: 0
     settings:
@@ -44,14 +36,22 @@ content:
     type: media_library_widget
     region: content
   field_number_integer:
-    weight: 2
+    weight: 3
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_prefix_text:
-    weight: 1
+    weight: 2
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_suffix_text:
+    weight: 4
     settings:
       size: 10
       placeholder: ''
@@ -59,7 +59,7 @@ content:
     type: string_textfield
     region: content
   field_title:
-    weight: 4
+    weight: 1
     settings:
       size: 60
       placeholder: ''

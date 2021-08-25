@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_field_suffix_text
-field_name: field_field_suffix_text
+id: paragraph.field_suffix_text
+field_name: field_suffix_text
 entity_type: paragraph
 type: string
 settings:

@@ -1,7 +1,12 @@
 uuid: d903b132-732d-453f-870b-ffafa30e1b81
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_statistics/images/ixm_blocks_statistics.svg
 id: ixm_blocks_statistics
 label: Statistics
 revision: 0

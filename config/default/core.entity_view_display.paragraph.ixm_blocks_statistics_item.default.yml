@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.ixm_blocks_statistics_item.field_body
-    - field.field.paragraph.ixm_blocks_statistics_item.field_field_suffix_text
+    - field.field.paragraph.ixm_blocks_statistics_item.field_suffix_text
     - field.field.paragraph.ixm_blocks_statistics_item.field_media_element
     - field.field.paragraph.ixm_blocks_statistics_item.field_number_integer
     - field.field.paragraph.ixm_blocks_statistics_item.field_prefix_text
@@ -24,33 +24,34 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_field_suffix_text:
+  field_media_element:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_number_integer:
     weight: 3
+    label: hidden
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_prefix_text:
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_media_element:
-    weight: 0
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_number_integer:
-    weight: 2
-    label: hidden
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_prefix_text:
-    weight: 1
+  field_suffix_text:
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
@@ -58,7 +59,7 @@ content:
     type: string
     region: content
   field_title:
-    weight: 4
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
