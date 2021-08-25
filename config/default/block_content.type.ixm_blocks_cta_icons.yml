@@ -1,7 +1,12 @@
 uuid: d3baf806-e0c0-4ed6-9a9e-8130fa123c0a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_cta_icons/images/ixm_blocks_cta_icons.svg
 id: ixm_blocks_cta_icons
 label: 'CTA Icons'
 revision: 0
