@@ -1,0 +1,10 @@
+uuid: 05988449-a2a5-467e-833c-1cc5ad779a32
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_cta_icon_item
+label: 'CTA Icon Item'
+icon_uuid: null
+icon_default: null
+description: 'Subcomponent for the CTA Icons block.'
+behavior_plugins: {  }

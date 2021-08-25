@@ -1,0 +1,25 @@
+uuid: ccca554d-dca3-4ffa-a5a7-68583e04359f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_cta_icons
+    - field.field.block_content.ixm_blocks_cta_icons.field_entity_reference_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_cta_icons.default
+targetEntityType: block_content
+bundle: ixm_blocks_cta_icons
+mode: default
+content:
+  field_entity_reference_paragraph:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

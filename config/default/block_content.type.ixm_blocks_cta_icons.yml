@@ -1,0 +1,8 @@
+uuid: d3baf806-e0c0-4ed6-9a9e-8130fa123c0a
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_cta_icons
+label: 'CTA Icons'
+revision: 0
+description: 'A component for adding custom CTA Icons.'

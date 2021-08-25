@@ -1,0 +1,46 @@
+uuid: 9ac9bc88-839a-4619-b80c-2ceb3a85fefd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_cta_icons
+    - field.storage.block_content.field_entity_reference_paragraph
+    - paragraphs.paragraphs_type.ixm_blocks_cta_icon_item
+  module:
+    - entity_reference_revisions
+id: block_content.ixm_blocks_cta_icons.field_entity_reference_paragraph
+field_name: field_entity_reference_paragraph
+entity_type: block_content
+bundle: ixm_blocks_cta_icons
+label: 'CTA Icon Item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ixm_blocks_cta_icon_item: ixm_blocks_cta_icon_item
+    target_bundles_drag_drop:
+      ixm_blocks_accordion_item:
+        weight: 7
+        enabled: false
+      ixm_blocks_card:
+        weight: 8
+        enabled: false
+      ixm_blocks_carousel_item:
+        weight: 9
+        enabled: false
+      ixm_blocks_cta_icon_item:
+        enabled: true
+        weight: 10
+      ixm_blocks_ping_pong_item:
+        weight: 11
+        enabled: false
+      ixm_blocks_statistics_item:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions
