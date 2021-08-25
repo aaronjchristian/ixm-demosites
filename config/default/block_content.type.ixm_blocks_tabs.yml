@@ -1,0 +1,8 @@
+uuid: 8b886de3-bbf6-423f-bdeb-5fcee60577ff
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_tabs
+label: Tabs
+revision: 0
+description: 'A component for adding custom Tabs.'

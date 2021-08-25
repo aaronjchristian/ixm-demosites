@@ -1,0 +1,36 @@
+uuid: 24fd3398-22a7-4c50-8410-35713850dc5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ixm_blocks_tab_item.field_body
+    - field.field.paragraph.ixm_blocks_tab_item.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_tab_item
+  module:
+    - text
+id: paragraph.ixm_blocks_tab_item.default
+targetEntityType: paragraph
+bundle: ixm_blocks_tab_item
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

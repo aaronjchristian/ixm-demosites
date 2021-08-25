@@ -1,0 +1,23 @@
+uuid: 7d073e13-4fc4-46c1-b5ca-b9883119ccc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.ixm_blocks_tab_item
+  module:
+    - text
+id: paragraph.ixm_blocks_tab_item.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: ixm_blocks_tab_item
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

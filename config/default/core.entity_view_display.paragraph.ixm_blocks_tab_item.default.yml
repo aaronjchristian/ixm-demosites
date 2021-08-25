@@ -1,0 +1,32 @@
+uuid: 98908a1a-1430-47e6-8872-8777253b6b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ixm_blocks_tab_item.field_body
+    - field.field.paragraph.ixm_blocks_tab_item.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_tab_item
+  module:
+    - text
+id: paragraph.ixm_blocks_tab_item.default
+targetEntityType: paragraph
+bundle: ixm_blocks_tab_item
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,10 @@
+uuid: acdcdac1-6844-41f3-b28a-7705005d7795
+langcode: en
+status: true
+dependencies: {  }
+id: ixm_blocks_tab_item
+label: 'Tab Item'
+icon_uuid: null
+icon_default: null
+description: 'Subcomponent for the Tabs block.'
+behavior_plugins: {  }
