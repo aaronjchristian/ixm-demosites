@@ -51,6 +51,7 @@ module:
   ixm_blocks_ping_pong: 0
   ixm_blocks_statistics: 0
   ixm_blocks_table: 0
+  ixm_blocks_tabs: 0
   jsonapi: 0
   kint: 0
   layout_builder: 0
