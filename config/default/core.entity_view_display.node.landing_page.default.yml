@@ -17,8 +17,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
     enabled: true
+    allow_custom: true
     sections:
       -
         layout_id: 'bootstrap_layout_builder:blb_col_1'
@@ -135,11 +135,12 @@ third_party_settings:
             configuration:
               id: local_tasks_block
               label: Tabs
-              provider: core
               label_display: '0'
+              provider: core
+              context_mapping: {  }
               primary: true
               secondary: true
-              context_mapping: {  }
+            weight: 0
             additional:
               bootstrap_styles:
                 block_style:
@@ -224,7 +225,6 @@ third_party_settings:
                       class: _none
                   scroll_effects:
                     class: null
-            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -236,7 +236,17 @@ third_party_settings:
     enable: true
   layout_builder_restrictions:
     entity_view_mode_restriction:
-      whitelisted_blocks:
+      allowed_layouts:
+        - 'bootstrap_layout_builder:blb_col_1'
+        - 'bootstrap_layout_builder:blb_col_2'
+        - 'bootstrap_layout_builder:blb_col_3'
+        - 'bootstrap_layout_builder:blb_col_12'
+      denylisted_blocks:
+        'Custom block types':
+          - everything
+        'Inline blocks':
+          - 'inline_block:everything'
+      allowlisted_blocks:
         'Chaos Tools': {  }
         'Content fields': {  }
         Devel: {  }
@@ -253,16 +263,6 @@ third_party_settings:
         Views: {  }
         core:
           - page_title_block
-      allowed_layouts:
-        - 'bootstrap_layout_builder:blb_col_1'
-        - 'bootstrap_layout_builder:blb_col_2'
-        - 'bootstrap_layout_builder:blb_col_3'
-        - 'bootstrap_layout_builder:blb_col_12'
-      blacklisted_blocks:
-        'Custom block types':
-          - everything
-        'Inline blocks':
-          - 'inline_block:everything'
     allowed_block_categories: {  }
 _core:
   default_config_hash: LSefcEOqN7djHmmcvteasL4ahegCSrEj1l0YLmj8vyY
@@ -273,11 +273,11 @@ mode: default
 content:
   field_meta_tags:
     type: metatag_empty_formatter
-    region: content
     label: hidden
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   content_moderation_control: true

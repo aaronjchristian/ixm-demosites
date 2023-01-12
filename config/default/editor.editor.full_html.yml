@@ -36,11 +36,35 @@ settings:
           name: Tools
           items:
             - Source
+            - bs_grid
   plugins:
-    stylescombo:
-      styles: ''
     language:
       language_list: un
+    stylescombo:
+      styles: ''
+    bs_grid:
+      use_cdn: true
+      cdn_url: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap-grid.min.css'
+      available_columns:
+        1: '1'
+        2: '2'
+        3: '3'
+        4: 0
+        5: 0
+        6: 0
+        7: 0
+        8: 0
+        9: 0
+        10: 0
+        11: 0
+        12: 0
+      available_breakpoints:
+        xs: xs
+        md: md
+        sm: 0
+        lg: 0
+        xl: 0
+        xxl: 0
 image_upload:
   status: false
   scheme: public

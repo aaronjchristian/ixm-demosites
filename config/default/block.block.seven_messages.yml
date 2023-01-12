@@ -1,14 +1,17 @@
+uuid: 9edfc061-9a4b-469c-a2e2-cdf276aaa13f
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - swat
-id: swat_messages
-theme: swat
-region: content_top
-weight: -6
+    - seven
+_core:
+  default_config_hash: '-jYsN5c236dcAkjB4OYknH4um1vE4SdAeDUOG4k_f1E'
+id: seven_messages
+theme: seven
+region: highlighted
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

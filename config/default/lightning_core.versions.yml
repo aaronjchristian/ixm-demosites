@@ -9,6 +9,7 @@ block_library: 0.0.0
 bootstrap_layout_builder: 0.0.0
 breakpoint: 8.9.1
 ckeditor: 8.9.1
+ckeditor_bs_grid: 0.0.0
 config: 8.9.1
 conflict: 2.0.0-alpha2
 consumers: 1.11.0

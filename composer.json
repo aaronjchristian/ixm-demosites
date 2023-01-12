@@ -1,34 +1,39 @@
 {
-    "name": "acquia/blt-project",
-    "type": "project",
-    "description": "Project template for Drupal 8 sites built with BLT.",
-    "license": "GPL-2.0-only",
+    "name": "acquia/drupal-recommended-project",
+    "description": "Acquia-compatible Drupal application based on the Drupal Recommended Project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Acquia Engineering",
+            "homepage": "https://www.acquia.com",
+            "role": "Maintainer"
+        }
+    ],
     "require": {
-        "php": ">=7.2",
-        "acquia/blt": "^11.2.0",
-        "acquia/drupal-spec-tool": "*",
-        "acquia/lightning": "dev-8.x-4.x",
-        "acquia/memcache-settings": "*",
+        "acquia/blt": "^12",
+        "acquia/blt-phpcs": "^1.0",
+        "acquia/lightning": "^5",
         "bower-asset/bootstrap": "^5.0.0",
-        "drupal/acquia_connector": "^1.5.0",
-        "drupal/acquia_purge": "^1.0-beta3",
-        "drupal/admin_toolbar": "^2.3",
-        "drupal/block_library": "dev-master",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/block_library": "^1.0@alpha",
         "drupal/bootstrap": "^3.23",
         "drupal/bootstrap_barrio": "^5.1",
-        "drupal/bootstrap_layout_builder": "dev-master",
-        "drupal/bootstrap_styles": "dev-master",
+        "drupal/bootstrap_layout_builder": "^2.0",
+        "drupal/bootstrap_styles": "^1.0",
+        "drupal/ckeditor_bs_grid": "2.0.x-dev",
         "drupal/cog": "^1.0.0",
         "drupal/config_split": "^1.0.0",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-recommended": "^8.8.0",
-        "drupal/devel": "^2.0.0",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/devel": "^4.1",
         "drupal/features": "^3.8.0",
         "drupal/image_resize_filter": "^1.1",
-        "drupal/ixm_blocks": "dev-master",
+        "drupal/ixm_blocks": "^1.0",
         "drupal/layout_builder_block_clone": "^1.1",
-        "drupal/layout_builder_blocks": "dev-master",
-        "drupal/layout_builder_kit": "^1.0@beta",
+        "drupal/layout_builder_blocks": "^1.0",
         "drupal/layout_builder_modal": "^1.1",
         "drupal/media_library_form_element": "^2.0",
         "drupal/media_library_theme_reset": "^1.0",
@@ -36,43 +41,53 @@
         "drupal/qa_accounts": "^1.0.0-alpha1",
         "drupal/responsive_preview": "^1.0",
         "drupal/seckit": "^1.0.0-alpha2",
-        "drupal/section_library": "dev-master",
+        "drupal/section_library": "^1.0",
         "drupal/shield": "^1.2.0",
-        "drupal/twig_tweak": "^2.9",
-        "imagex/swat": "^4.0"
-    },
-    "require-dev": {
-        "acquia/blt-require-dev": "11.x-dev"
+        "drupal/twig_tweak": "^3.1",
+        "imagex/swat": "^4.0",
+        "oomphinc/composer-installers-extender": "^1.1 || ^2"
     },
     "config": {
-        "platform": {
-            "php": "7.2"
-        },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true,
+            "acquia/blt": true,
+            "acquia/blt-phpcs": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
         "drupal-scaffold": {
-            "locations": {
-                "web-root": "./docroot"
-            },
             "file-mapping": {
                 "[web-root]/sites/default/default.services.yml": {
                     "mode": "replace",
-                    "path": "docroot/core/assets/scaffold/files/default.services.yml",
-                    "overwrite": false
+                    "overwrite": false,
+                    "path": "docroot/core/assets/scaffold/files/default.services.yml"
                 },
                 "[web-root]/sites/default/default.settings.php": {
                     "mode": "replace",
-                    "path": "docroot/core/assets/scaffold/files/default.settings.php",
-                    "overwrite": false
+                    "overwrite": false,
+                    "path": "docroot/core/assets/scaffold/files/default.settings.php"
                 }
+            },
+            "gitignore": true,
+            "locations": {
+                "web-root": "docroot/"
             }
         },
         "enable-patching": true,
         "installer-paths": {
             "docroot/core": [
                 "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
             ],
             "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -83,21 +98,13 @@
             "docroot/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "docroot/profiles/custom/{$name}": [
-                "type:drupal-custom-profile"
-            ],
             "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
             "docroot/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ],
-            "docroot/libraries/{$name}": [
-                "type:drupal-library",
-                "type:bower-asset",
-                "type:npm-asset"
-            ],
-            "drush/Commands/{$name}": [
+            "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ]
         },
@@ -109,49 +116,12 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/core": {
-                "1091852-104: Display Bug when using #states (Forms API) with Ajax Request": "https://www.drupal.org/files/issues/2019-11-19/1091852-104.patch"
-            },
             "drupal/paragraphs": {
                 "Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2021-05-03/paragraphs-2901390-82-withtests.patch"
             }
         }
     },
-    "autoload": {
-        "psr-4": {
-            "Example\\": "blt/src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Drupal\\Tests\\PHPUnit\\": "tests/phpunit/src/"
-        }
-    },
     "repositories": {
-        "drupal/bootstrap_layout_builder": {
-            "type": "path",
-            "url": "drupal/bootstrap_layout_builder"
-        },
-        "drupal/bootstrap_styles": {
-            "type": "path",
-            "url": "drupal/bootstrap_styles"
-        },
-        "drupal/layout_builder_blocks": {
-            "type": "path",
-            "url": "drupal/layout_builder_blocks"
-        },
-        "drupal/block_library": {
-            "type": "path",
-            "url": "drupal/block_library"
-        },
-        "drupal/section_library": {
-            "type": "path",
-            "url": "drupal/section_library"
-        },
-        "drupal/ixm_blocks": {
-            "type": "path",
-            "url": "drupal/ixm_blocks"
-        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
@@ -162,15 +132,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "post-create-project-cmd": [
-            "blt internal:create-project:init-repo"
-        ],
-        "nuke": [
-            "rm -rf vendor composer.lock docroot/core docroot/modules/contrib docroot/profiles/contrib docroot/themes/contrib",
-            "@composer clearcache --ansi",
-            "@composer install --ansi"
-        ]
-    }
+    "prefer-stable": true
 }

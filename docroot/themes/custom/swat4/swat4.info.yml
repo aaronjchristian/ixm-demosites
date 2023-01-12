@@ -20,5 +20,5 @@ regions:
   footer_two: 'Footer Two'
   footer_three: 'Footer Three'
   footer_bottom: 'Footer Bottom'
-ckeditor_stylesheets:
+ckeditor5-stylesheets:
   - css/styles.css

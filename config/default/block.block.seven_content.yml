@@ -1,14 +1,17 @@
+uuid: 2ef604ef-2349-4a0b-8ec9-3b4f88e48f5f
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - swat
-id: swat_content
-theme: swat
+    - seven
+_core:
+  default_config_hash: Gb0quEgYLU5Y9Y8GTIdju9bnodxLQCX2_ATpXdln--o
+id: seven_content
+theme: seven
 region: content
-weight: -5
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

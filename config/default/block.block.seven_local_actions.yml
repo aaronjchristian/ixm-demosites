@@ -1,12 +1,15 @@
+uuid: 59fc3a9e-e168-4f1c-b177-acb0c2a7559e
 langcode: en
 status: true
 dependencies:
   theme:
-    - swat
-id: swat_local_actions
-theme: swat
-region: content_top
-weight: -3
+    - seven
+_core:
+  default_config_hash: vyYUqNrQQkZToJMdRUVn2c1d8r_I5IPw3u8Lh3G2npE
+id: seven_local_actions
+theme: seven
+region: content
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,14 +1,17 @@
+uuid: 77c415e7-76f2-4398-a18b-4b435e4b7b28
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - swat
-id: swat_breadcrumbs
-theme: swat
-region: content
-weight: -6
+    - seven
+_core:
+  default_config_hash: PFU7DzXtG6bcSomQ_wXUsjaAsVlys24Ypdu_wobbvV0
+id: seven_breadcrumbs
+theme: seven
+region: breadcrumb
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

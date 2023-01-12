@@ -23,30 +23,26 @@
         'navbar-expand-lg',
         'align-items-lg-end',
         'px-0',
+        'py-3',
         header_navbar_type ? 'navbar-' ~ header_navbar_type,
       ] %}
 
       <nav {{ nav_attributes.addClass(nav_classes) }}>
 
         {# logo - change if needs to be dynamic. #}
-        <a class="navbar-brand" href="/">
-          <img src="/{{ directory }}/logo.svg" alt="Site Logo">
-        </a>
+        <div class="d-flex align-items-center">
+          {% include '@swat4/logo.svg' with {
+            logo_size: 200,
+            title: 'Site logo',
+          } %}
+          <span class="badge rounded-pill bg-primary ms-3 fw-light">{{ 'Demo lab' }}</span>
+        </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-
-          {% if page.search %}
-            <div id="search-overlay">
-              {{ page.search }}
-              <div class="search-exit">
-                <button class="btn btn-secondary">{{ 'Close Search'|t }}</button>
-              </div>
-            </div>
-          {% endif %}
 
           {% if page.navigation %}
             <div class="ms-lg-auto">
