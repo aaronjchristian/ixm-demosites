@@ -1,0 +1,15 @@
+uuid: 1057b3e8-4eea-488a-95ac-4da6bda5acf1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_library
+third_party_settings:
+  block_library:
+    icon_path: modules/contrib/ixm_blocks/modules/ixm_blocks_hero/images/ixm_blocks_hero.svg
+_core:
+  default_config_hash: ETpH-FcmCk7B46zLNHDB6fxarxGnDLCJxbWjJJsHHM0
+id: ixm_blocks_hero
+label: 'Hero Banner'
+revision: 0
+description: 'A component for adding hero banners.'

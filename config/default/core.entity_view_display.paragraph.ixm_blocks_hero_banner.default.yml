@@ -1,0 +1,58 @@
+uuid: f7fe5390-0edc-4037-ae1f-eb3c66b6a87a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ixm_blocks_hero_banner.field_body
+    - field.field.paragraph.ixm_blocks_hero_banner.field_links
+    - field.field.paragraph.ixm_blocks_hero_banner.field_media_element
+    - field.field.paragraph.ixm_blocks_hero_banner.field_title
+    - paragraphs.paragraphs_type.ixm_blocks_hero_banner
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: goyr249K8b-yk9DzvHa9Yuu4zIB03dyejeYah_R9DDI
+id: paragraph.ixm_blocks_hero_banner.default
+targetEntityType: paragraph
+bundle: ixm_blocks_hero_banner
+mode: default
+content:
+  field_body:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_links:
+    type: link
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_media_element:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

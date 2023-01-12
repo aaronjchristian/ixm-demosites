@@ -1,7 +1,10 @@
 uuid: 7a240d9f-db81-43fd-9be4-4443fa62e9af
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - entity_browser
+    - media
 _core:
   default_config_hash: L47HI71RjV8g6EyXHqdUuAOtEFv7iUxYDREF-OSBMUE
 id: media_manager

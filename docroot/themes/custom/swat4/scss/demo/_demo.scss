@@ -6,11 +6,12 @@
   background: transparent;
 }
 
-.region-content-top,
-.layout-builder-form {
-  @include make-container();
-}
-
 .tabs.primary {
   margin: 1.5rem 0;
+}
+
+@include media-breakpoint-up(md) {
+  .hero__banner {
+    padding: 3rem 5rem;
+  }
 }

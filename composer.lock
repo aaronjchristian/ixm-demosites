@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec8db9de90c9bd47e1a6637013e24e7c",
+    "content-hash": "7cd7c31e4f13fce7e8b74387efe71671",
     "packages": [
         {
             "name": "acquia/blt",
@@ -7015,29 +7015,29 @@
         },
         {
             "name": "drupal/media_library_form_element",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/media_library_form_element.git",
-                "reference": "2.0.4"
+                "reference": "2.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_library_form_element-2.0.4.zip",
-                "reference": "2.0.4",
-                "shasum": "c345d1c047762c342b9ed73e8f1fb796c8644945"
+                "url": "https://ftp.drupal.org/files/projects/media_library_form_element-2.0.5.zip",
+                "reference": "2.0.5",
+                "shasum": "6a7841e3da3eb9622327812ef1608aaca60ff599"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9.2 || ^10"
             },
             "require-dev": {
-                "drupal/webform": "^6.0"
+                "drupal/webform": "6.2.x-dev@dev"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.4",
-                    "datestamp": "1659257104",
+                    "version": "2.0.5",
+                    "datestamp": "1673542646",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

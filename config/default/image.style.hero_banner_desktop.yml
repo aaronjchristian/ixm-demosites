@@ -1,0 +1,17 @@
+uuid: fe8dfb98-b837-4674-b538-a8e9bcb0786d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RorPXUiZzV28BgYQVwUGQRUDeeAI_AVvdQABi2GgvsM
+name: hero_banner_desktop
+label: 'Hero Banner - Desktop (1440 x 600)'
+effects:
+  f24029f7-30d8-45a5-b060-2cc1354cc31e:
+    uuid: f24029f7-30d8-45a5-b060-2cc1354cc31e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 600
+      anchor: center-center

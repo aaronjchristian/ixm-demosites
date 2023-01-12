@@ -1,0 +1,17 @@
+uuid: 127ca8c3-67c3-451b-8a05-35e8a3fd772a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RTTnjTVJ_DU1j2fGaq1IDhM5n2UYrV28VSF54sCb1CY
+name: hero_banner_mobile
+label: 'Hero Banner - Mobile (992 x 1354)'
+effects:
+  1503a47e-d18c-4f20-989c-c780275f11e2:
+    uuid: 1503a47e-d18c-4f20-989c-c780275f11e2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 1354
+      anchor: center-center

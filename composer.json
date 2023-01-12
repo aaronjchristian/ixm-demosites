@@ -115,11 +115,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-            "drupal/paragraphs": {
-                "Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2021-05-03/paragraphs-2901390-82-withtests.patch"
-            }
-        }
+        "patches": {}
     },
     "repositories": {
         "drupal": {

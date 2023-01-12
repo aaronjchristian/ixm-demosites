@@ -1,0 +1,36 @@
+uuid: ea7d342d-c675-4895-a280-9b99c831735f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_hero
+    - field.storage.block_content.field_entity_reference_paragraph
+    - paragraphs.paragraphs_type.ixm_blocks_hero_banner
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: DgoHSHuXhxt4feT7gEoVSClhOoQ-KBCO1qCy6XZ_eN8
+id: block_content.ixm_blocks_hero.field_entity_reference_paragraph
+field_name: field_entity_reference_paragraph
+entity_type: block_content
+bundle: ixm_blocks_hero
+label: Banner
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ixm_blocks_hero_banner: ixm_blocks_hero_banner
+    target_bundles_drag_drop:
+      ixm_blocks_accordion_item:
+        weight: 3
+        enabled: false
+      ixm_blocks_hero_banner:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

@@ -9,6 +9,7 @@ block_library: 0.0.0
 bootstrap_layout_builder: 0.0.0
 breakpoint: 8.9.1
 ckeditor: 8.9.1
+ckeditor5: 9.5.1
 ckeditor_bs_grid: 0.0.0
 config: 8.9.1
 conflict: 2.0.0-alpha2
@@ -46,6 +47,7 @@ ixm_blocks_accordion: 0.0.0
 ixm_blocks_cards: 0.0.0
 ixm_blocks_carousel: 0.0.0
 ixm_blocks_cta_icons: 0.0.0
+ixm_blocks_hero: 1.0.1
 ixm_blocks_modal: 0.0.0
 ixm_blocks_ping_pong: 0.0.0
 ixm_blocks_statistics: 0.0.0
@@ -96,6 +98,7 @@ menu_ui: 8.9.1
 metatag: 1.13.0
 moderation_dashboard: 1.0.0-beta2
 moderation_sidebar: 1.4.0
+mysql: 9.5.1
 node: 8.9.1
 openapi: 2.0.0-rc3
 openapi_jsonapi: 2.0.0-rc2
@@ -121,6 +124,7 @@ search_api_db: 1.17.0
 seckit: 1.2.0
 section_library: 0.0.0
 serialization: 8.9.1
+shield: 1.7.0
 shortcut: 8.9.1
 simple_gmap: 2.1.0-rc1
 simple_oauth: 4.5.0

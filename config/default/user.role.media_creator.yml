@@ -1,7 +1,11 @@
 uuid: fb182e5a-b6b2-4b97-9d48-9a6cfc97a1a8
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - dropzonejs
+    - entity_browser
+    - media
 _core:
   default_config_hash: 8J2t5AXYOAkiBwYiWFZtw3ZsBn2IiRHQIVfj58gH3II
 id: media_creator

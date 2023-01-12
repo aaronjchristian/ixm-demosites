@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+{% set form_classes = [] %}
+
+{% if 'layout-builder-form' in attributes.class %}
+  {% set form_classes = ['container'] %}
+{% endif %}
+
+<form{{ attributes.addClass(form_classes) }}>
+  {{ children }}
+</form>

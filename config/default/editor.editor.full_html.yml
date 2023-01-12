@@ -1,75 +1,52 @@
-uuid: 197d55a9-1e24-4ddc-a1df-b905a88cba7c
+uuid: c0ef6f73-845c-400e-b076-cc4f83a65092
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
-          name: Tools
-          items:
-            - Source
-            - bs_grid
+    items:
+      - heading
+      - bold
+      - italic
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - '|'
+      - sourceEditing
   plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
-    bs_grid:
-      use_cdn: true
-      cdn_url: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap-grid.min.css'
-      available_columns:
-        1: '1'
-        2: '2'
-        3: '3'
-        4: 0
-        5: 0
-        6: 0
-        7: 0
-        8: 0
-        9: 0
-        10: 0
-        11: 0
-        12: 0
-      available_breakpoints:
-        xs: xs
-        md: md
-        sm: 0
-        lg: 0
-        xl: 0
-        xxl: 0
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_imageResize:
+      allow_resize: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
-  status: false
+  status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

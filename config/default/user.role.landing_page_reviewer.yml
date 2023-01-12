@@ -1,7 +1,15 @@
 uuid: f0756211-8a1b-44c4-86e8-0a4d78b2e171
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.landing_page
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - moderation_sidebar
+    - node
+    - toolbar
 id: landing_page_reviewer
 label: 'Landing page reviewer'
 weight: 5

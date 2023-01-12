@@ -1,7 +1,15 @@
 uuid: 574ea355-a956-4c4c-b382-bfe108302ea2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - contact
+    - filter
+    - media
+    - shortcut
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated

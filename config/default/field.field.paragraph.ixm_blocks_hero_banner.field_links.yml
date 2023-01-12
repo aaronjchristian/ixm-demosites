@@ -1,0 +1,25 @@
+uuid: d6f6f40e-8032-460a-8a84-d0e8f33f8a50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_links
+    - paragraphs.paragraphs_type.ixm_blocks_hero_banner
+  module:
+    - link
+_core:
+  default_config_hash: 2AbqE9RvN-6PBdXZUvgyU-BsKCZktsO5bx4OPSPbsYQ
+id: paragraph.ixm_blocks_hero_banner.field_links
+field_name: field_links
+entity_type: paragraph
+bundle: ixm_blocks_hero_banner
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

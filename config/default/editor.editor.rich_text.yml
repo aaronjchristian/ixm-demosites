@@ -1,71 +1,108 @@
-uuid: a59913b7-bf9a-437c-a338-37fdedace0d0
+uuid: 38c75b71-1023-49fe-bdbb-b6cf807bb7db
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.rich_text
   module:
-    - ckeditor
-_core:
-  default_config_hash: 0bVELtfx9sXhjZ6s6W-dJo8SW-IR9jiEIEylzm-2Cro
+    - ckeditor5
 format: rich_text
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Strike
-            - Superscript
-            - '-'
-            - Subscript
-            - RemoveFormat
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - JustifyBlock
-            - Styles
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - Table
-            - HorizontalRule
-            - media_browser
-            - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
+    items:
+      - heading
+      - style
+      - bold
+      - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
+      - alignment
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - insertTable
+      - horizontalLine
+      - drupalInsertImage
+      - drupalMedia
+      - '|'
+      - code
+      - codeBlock
+      - '|'
+      - sourceEditing
+      - '|'
   plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: "h1.display-1|Display 1\r\nh2.display-2|Display 2\r\nh3.display-3|Display 3\r\nh4.display-4|Display 4\r\na.btn.btn-lg.btn-outline-light.px-5.rounded-pill|Light Button\r\na.btn.btn-lg.btn-outline-dark.px-5.rounded-pill|Dark Button"
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Display 1'
+          element: '<h1 class="display-1">'
+        -
+          label: 'Display 2'
+          element: '<h2 class="display-2">'
+        -
+          label: 'Display 3'
+          element: '<h3 class="display-3">'
+        -
+          label: 'Display 4'
+          element: '<h4 class="display-4">'
+        -
+          label: 'Light Button'
+          element: '<a class="btn btn-lg btn-outline-light px-5 rounded-pill">'
+        -
+          label: 'Dark Button'
+          element: '<a class="btn btn-lg btn-outline-dark px-5 rounded-pill">'
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<drupal-entity data-* title alt>'
+        - '<a hreflang class>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h1 id class>'
+        - '<h2 id class>'
+        - '<h3 id class>'
+        - '<h4 id class>'
+        - '<h5 id class>'
+        - '<h6 id class>'
+        - '<img class>'
+        - '<p class>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
+    ckeditor5_imageResize:
+      allow_resize: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

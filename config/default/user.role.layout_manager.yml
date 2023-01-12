@@ -1,7 +1,11 @@
 uuid: 5070f94a-edaf-4ae5-8d27-32b4466f6022
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - field_ui
+    - layout_builder
+    - node
 _core:
   default_config_hash: 4xRLPoyhr5ynv4NK0SXc_NfjeWzkXN2PaV9zAmNIH3s
 id: layout_manager
